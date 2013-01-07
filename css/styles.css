@@ -1,0 +1,30 @@
+
+.float {
+	float: left;
+}
+.is-bold {
+	font-weight: bold;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.is-dummy {
+	color: red;
+	background-color: pink;
+}
+
+.has-border {
+	border: dashed 1px white;
+}
+
+/* ***** */
+
+.inbox {
+	background-color: #58a;
+	color: #fff;
+}
+.inbox .unread {
+	background-color: blue;
+}

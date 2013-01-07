@@ -4,7 +4,7 @@
 requirejs.config({
 	baseUrl: 'js/',
 	paths: {
-		jquery: 'lib/jquery',
+		jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min',
 		underscore: 'lib/underscore'
 	}
 });

@@ -1,0 +1,19 @@
+<div class="item has-border">
+	<h3 class="title">{{ title }}</h3>
+	<div class="sender">Sender: {{ sender }}</div>
+	<div class="receiver">Receiver: {{ receiver }}</div>
+	<div class="date">Date: {{ date }}</div>
+	<div class="has-border">{{ text }}</div>
+</div>
+<button class="btn btn-primary reply">Reply</button>
+
+<div class="reply-area is-hidden">
+	<form id="reply-email" name="reply-email">
+		<h3>Re: '{{ title }}'</h3>
+		Title: <input type="text" name="title" value="Re: {{ title }}" /><br />
+		Sender: <input type="text" name="sender" value="{{ receiver }}" /><br />
+		Receiver: <input type="text" name="receiver" value="{{ sender }}" /><br />
+		<textarea name="text"></textarea><br />
+		<input type="submit" class="btn btn-primary send" value="Send" />
+	</form>
+</div>
