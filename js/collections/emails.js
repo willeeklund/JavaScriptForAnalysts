@@ -7,7 +7,7 @@ define(['models/email', 'backbone'], function(EmailModel) {
 			$(document).on('sent_email', function(ev, data) {
 				console.log("Triggered: sent_email", data);
 				that.add(new EmailModel(data));
-				console.log("collection data", that.toJSON())
+				console.log("collection data", that.toJSON());
 			});
 		}
 	});
