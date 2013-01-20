@@ -1,3 +1,4 @@
-JavaScript (JS) is an open source client-side scripting language
+From Wikipedia:
+"JavaScript (JS) is an open source client-side scripting language
 commonly implemented as part of a web browser in order to create
-enhanced user interfaces and dynamic websites.
+enhanced user interfaces and dynamic websites."
