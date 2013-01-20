@@ -1,0 +1,95 @@
+------------------------------
+Topics / presentation schedule
+------------------------------
+	Intro	5min
+		Bakgrund
+		Varför,
+	Features of Java script
+	* (Wille) Strukturera JavaScript
+		(function() {})
+	Webutveckling
+		* (Wille) ClientSide
+			No
+		* (Wille) JQuery
+			DOM Manipulations
+			Plugins
+			Ajax
+		* (Wille) Browserkompatibilietet (fråga Netlight.js)
+			JS / CSS kompatibilitet olika?
+			Kommer detta vara problem i framtiden ?
+			Ramverks som abstraktionslager pga detta?
+		Debugging
+			Rookie way
+			Better way
+		Produktion / bundle av JS
+			Laddningstid
+
+
+::Upplägg::
+--------------
+Intro	5min
+	Bakgrund
+	Varför,
+Strukturera JavaScript
+	(function() {})
+Features of Java script
+Webutveckling
+	ClientSide
+	JQuery
+	DOM Manipulations
+	Plugins
+	Ajax
+	Browserkompatibilietet (fråga Netlight.js)
+
+--------------
+
+Syntax / språket
+	Closures / namespacing          											5
+		this/that/context														10
+	Callbacks / function objects												10
+	Arrayer, maps, objects, …													10
+	Send by Value vs Reference													5
+	HTML APIer																	3
+		EcmaScript																1
+	Prototyper
+		Extensions																7
+		Moduler																	7
+	Foreach vs For in 															1
+	arguments, löst typad syntax vid funktion       							5
+	Blocks in js do not create new scope            							5
+	You can create anonymous self executing funtions       						5
+	there are 2 equality operators in Java Script      							5
+	falsy and truth values         												5
+	access with [] instead of .       											5
+	functions are objects and therefore can have properties       				5
+
+JQuery 																			10
+	DOM manipulering  															10
+ 		Selectors									   							10
+	Events    																	10
+	Plugins   																	10
+	Animationer/effekter (intressant att köra i kodexempel)						5
+
+Ingående på intressanta områden  												10
+	Client side vs Server side   												10
+	 Ajax / Asynkron JS  														10
+
+Live-kodning
+	Dåligt exempel -> bra exempel
+	jQuery plugin implementation
+		Bildspel plugin?
+
+Ramverk
+	Abstraktionslager   														3
+		Syfte, vad löser det  													3
+	Browser kompatibilitet														4
+		JS / CSS kompatibilitet olika?
+		Kommer detta vara problem i framtiden ?
+
+Debuggning 																		10
+	console.log 																10
+	breakpoints 																10
+
+Produktion / bundle av JS 	  													5
+	CSS högst upp, JS längst ned 												5
+	NET fliken med laddningstider 												5
