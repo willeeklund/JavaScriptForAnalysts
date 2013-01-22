@@ -1,3 +1,48 @@
-JavaScript (JS) is an open source client-side scripting language
+== Bakgrund ==
+
+From Wikipedia:
+"JavaScript (JS) is an open source client-side scripting language
 commonly implemented as part of a web browser in order to create
-enhanced user interfaces and dynamic websites.
+enhanced user interfaces and dynamic websites."
+
+Netscape had an idea to put the easy o use HyperTalk event driven based on button and fields
+brendan ike. Scheme interpreter.
+
+Java, Scheme, Self
+
+JavaScript
+
+But you cant do scheme. To weird looking. "Make it more like Java". So he desigend a program with
+the syntax that looked like java, function model of scheme, prototypal objects of self.
+
+Developed under the name Mocha, LiveScript was the official name for the
+language when it first shipped in beta releases of Netscape Navigator 2.0
+in September 1995.
+
+Java script is
+    object oriented
+    functional
+
+Today Javascript is mainly a language for the web platform can also be found in:
+
+PDF Documents
+Desktop Programs and Widgets (Windows 8)
+Server side as Javascript VMs (most notably node.js)
+
+== Varför ==
+
+Why should you care about javascript and for whom is this presentation made for ?
+Well nowadays Javascript will knock on your door for ANYTHING web related or
+even remotely web related that your customers are doing.
+Well, when I joined Netligth I started at the Betsson site team with the thought
+ "Hey its Web development. 13 year olds can do it .. How hard can it be ? ",
+However, soon I discovered that I was not by far the fastest and most successful
+ developer in that team, and it was not HTML or CSS that held me back, it was JS.
+Wilhelm here has had the same experience in his professional life and as two typical
+Netlighters we started aquiering this knowledge on the side and now one can call
+us Java script ninjas.
+
+This presentation is made for those with no js background and want to skip the
+headache and ordeal of aquiring this knowledge.
+
+
