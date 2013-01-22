@@ -5,16 +5,16 @@ Topics / presentation schedule
 		Bakgrund
 		Varför,
 	Features of Java script
-	* (Wille) Strukturera JavaScript
+	* Strukturera JavaScript													(Wille)
 		(function() {})
 	Webutveckling
-		* (Wille) ClientSide
+		* ClientSide															(Wille)
 			No
-		* (Wille) JQuery
+		* JQuery																(Wille)
 			DOM Manipulations
-			Plugins
+DONE		Plugins
 			Ajax
-		* (Wille) Browserkompatibilietet (fråga Netlight.js)
+		* Browserkompatibilietet (fråga Netlight.js)							(Wille)
 			JS / CSS kompatibilitet olika?
 			Kommer detta vara problem i framtiden ?
 			Ramverks som abstraktionslager pga detta?

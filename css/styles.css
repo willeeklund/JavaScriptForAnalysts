@@ -1,3 +1,10 @@
+body {
+	background-color:#C2C7C2;
+	font-family: verdana, arial;
+	color: #222;
+	font-size:16px;
+	min-width:320px;
+}
 
 .float {
 	float: left;
@@ -27,4 +34,19 @@
 }
 .inbox .unread {
 	background-color: blue;
+}
+
+
+pre, blockquote {
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	background-color:#DFE7DD;
+	margin:15px 0;
+	padding:15px;
+}
+
+pre, code {
+	font-family:monospace;
+	font-size:12px;
 }

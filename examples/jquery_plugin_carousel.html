@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery plugin</title>
+	<link type='text/css' rel='stylesheet' href='../css/styles.css' />
+	<link type='text/css' rel='stylesheet' href='../css/liquidcarousel.css' />
+	<!-- jQuery loaded from Google's CDN -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/lib/jquery.liquidcarousel.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			console.log("Plugin is initiated when document is loaded and ready");
+			$('#image_slider').liquidcarousel({
+				height:129,
+				duration:500,
+				hidearrows:false
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>jQuery Plugin: "Liquid Carousel" image slider</h1>
+
+<div id="image_slider" class="liquid">
+	<span class="previous"></span>
+	<div class="wrapper">
+		<ul>
+			<li><a href="#" title="image 01"><img src="jquery_plugin_images/01.jpg" width="88" height="126" alt="image 01" border="0" /></a></li>
+			<li><a href="#" title="image 02"><img src="jquery_plugin_images/02.jpg" width="88" height="126" alt="image 02" border="0" /></a></li>
+			<li><a href="#" title="image 03"><img src="jquery_plugin_images/03.jpg" width="88" height="126" alt="image 03" border="0" /></a></li>
+			<li><a href="#" title="image 04"><img src="jquery_plugin_images/04.jpg" width="88" height="126" alt="image 04" border="0" /></a></li>
+			<li><a href="#" title="image 05"><img src="jquery_plugin_images/05.jpg" width="88" height="126" alt="image 05" border="0" /></a></li>
+			<li><a href="#" title="image 06"><img src="jquery_plugin_images/06.jpg" width="88" height="126" alt="image 06" border="0" /></a></li>
+			<li><a href="#" title="image 07"><img src="jquery_plugin_images/07.jpg" width="88" height="126" alt="image 07" border="0" /></a></li>
+			<li><a href="#" title="image 08"><img src="jquery_plugin_images/08.jpg" width="88" height="126" alt="image 08" border="0" /></a></li>
+			<li><a href="#" title="image 09"><img src="jquery_plugin_images/09.jpg" width="88" height="126" alt="image 09" border="0" /></a></li>
+			<li><a href="#" title="image 10"><img src="jquery_plugin_images/10.jpg" width="88" height="126" alt="image 10" border="0" /></a></li>
+			<li><a href="#" title="image 11"><img src="jquery_plugin_images/11.jpg" width="88" height="126" alt="image 11" border="0" /></a></li>
+			<li><a href="#" title="image 12"><img src="jquery_plugin_images/12.jpg" width="88" height="126" alt="image 12" border="0" /></a></li>
+			<li><a href="#" title="image 13"><img src="jquery_plugin_images/13.jpg" width="88" height="126" alt="image 13" border="0" /></a></li>
+			<li><a href="#" title="image 14"><img src="jquery_plugin_images/14.jpg" width="88" height="126" alt="image 14" border="0" /></a></li>
+			<li><a href="#" title="image 15"><img src="jquery_plugin_images/15.jpg" width="88" height="126" alt="image 15" border="0" /></a></li>
+			<li><a href="#" title="image 01"><img src="jquery_plugin_images/01.jpg" width="88" height="126" alt="image 01" border="0" /></a></li>
+
+			<li><a href="#" title="image 02"><img src="jquery_plugin_images/02.jpg" width="88" height="126" alt="image 02" border="0" /></a></li>
+			<li><a href="#" title="image 03"><img src="jquery_plugin_images/03.jpg" width="88" height="126" alt="image 03" border="0" /></a></li>
+			<li><a href="#" title="image 04"><img src="jquery_plugin_images/04.jpg" width="88" height="126" alt="image 04" border="0" /></a></li>
+			<li><a href="#" title="image 05"><img src="jquery_plugin_images/05.jpg" width="88" height="126" alt="image 05" border="0" /></a></li>
+			<li><a href="#" title="image 06"><img src="jquery_plugin_images/06.jpg" width="88" height="126" alt="image 06" border="0" /></a></li>
+			<li><a href="#" title="image 07"><img src="jquery_plugin_images/07.jpg" width="88" height="126" alt="image 07" border="0" /></a></li>
+			<li><a href="#" title="image 08"><img src="jquery_plugin_images/08.jpg" width="88" height="126" alt="image 08" border="0" /></a></li>
+			<li><a href="#" title="image 09"><img src="jquery_plugin_images/09.jpg" width="88" height="126" alt="image 09" border="0" /></a></li>
+			<li><a href="#" title="image 10"><img src="jquery_plugin_images/10.jpg" width="88" height="126" alt="image 10" border="0" /></a></li>
+			<li><a href="#" title="image 11"><img src="jquery_plugin_images/11.jpg" width="88" height="126" alt="image 11" border="0" /></a></li>
+			<li><a href="#" title="image 12"><img src="jquery_plugin_images/12.jpg" width="88" height="126" alt="image 12" border="0" /></a></li>
+			<li><a href="#" title="image 13"><img src="jquery_plugin_images/13.jpg" width="88" height="126" alt="image 13" border="0" /></a></li>
+			<li><a href="#" title="image 14"><img src="jquery_plugin_images/14.jpg" width="88" height="126" alt="image 14" border="0" /></a></li>
+			<li><a href="#" title="image 15"><img src="jquery_plugin_images/15.jpg" width="88" height="126" alt="image 15" border="0" /></a></li>
+		</ul>
+	</div>
+	<span class="next"></span>
+</div>
+
+<span class="sac">To see this plugin in action, just resize this window...</span>
+
+<p>Include the jQuery library and the liquid plugin:</p>
+<pre>
+&lt;script type="text/javascript" src="js/lib/jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/lib/jquery.liquidcarousel.js"&gt;&lt;/script&gt;
+</pre>
+
+Then you need to add the HTML structure as a list of items and the navigation buttons:
+<pre>
+&lt;div id="image_slider"&gt;
+	&lt;span class="previous"&gt;&lt;/span&gt;
+	&lt;div class="wrapper"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image01.jpg" alt="image01"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image02.jpg" alt="image02"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image03.jpg" alt="image03"/&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image04.jpg" alt="image04"/&gt;&lt;/a&gt;&lt;/li&gt;
+			...
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;span class="next"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+<p>Finally initiate the script using the $(document).ready() function:</p>
+<pre>
+$(document).ready(function() {
+	console.log("Plugin is initiated when document is loaded and ready");
+	$('#image_slider').liquidcarousel({
+		height: 129,		//the height of the list
+		duration: 500,		//the duration of the animation, in ms
+		hidearrows: true	//hide arrows if all of the list items are visible
+	});
+});
+</pre>
+
+</body>
+</html>

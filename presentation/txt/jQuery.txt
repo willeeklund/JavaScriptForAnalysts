@@ -1,0 +1,49 @@
+jQuery
+======
+
+Most popular JS framework, 91% of web projects using JavaScript use it.
+What it does:
+	- "write less, do more", abstraction layer
+	- browser compatibility for features
+Primary uses:
+	- Document manipulation (find elements, replace elements, add content)
+	- jQuery Plugins
+		* Send in options object
+	- Event listeners (registration, Event object sent to the callback function)
+
+
+
+Selectors:
+	.myClass
+	#myId
+
+Interesting functions to show:
+	  Basic
+	show() / hide()
+
+	  Manipulate DOM
+	html() / text() / replaceWith()
+	data() / attr()
+
+	  Find related element
+	parent() / closest()
+
+	  Events
+	on()
+	  "click"
+	  "resize"
+	  "submit"
+	  "customEvent"
+	  - Event object, function (event) {}
+	  - event.preventDefault()
+
+	trigger("customEvent", [{ foo: "bar" }])
+
+	  Asyncronic
+	ajax()
+
+Plugin to show:
+	Image carousel, file:///Users/wiek/Sites/JavaScriptForAnalysts/examples/jquery_plugin_carousel.html
+
+Using Ajax:
+	- send in options object where some attributes are callback functions
