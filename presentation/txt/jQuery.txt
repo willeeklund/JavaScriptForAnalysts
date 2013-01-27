@@ -47,3 +47,4 @@ Plugin to show:
 
 Using Ajax:
 	- send in options object where some attributes are callback functions
+
