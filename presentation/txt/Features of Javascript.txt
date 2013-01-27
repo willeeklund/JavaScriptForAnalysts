@@ -1,0 +1,138 @@
+== Javascript is a scripting language ==
+NOT like java. Scripting language means that there is no compiling of code making
+JS easy and fun to write but also creates a challange when writing large applications.
+Errors that usually are compile errors ends ut as runtime errors
+
+
+== Javascript is weak typed ==
+
+That means that you only have the basic building blocks for example
+ strings, ints, arrays and maps. There will be no type checking at all.
+
+/* Example of JS
+
+ string myVar = 1;
+ myVar = "This is now a String"
+ myVar = [1,2,3,4]; //This is now an array
+ myVar = {name : "name", property1 : 1, property2 : "PropertyValue"}
+
+*/
+
+== Javascript chews on ==
+
+Fråga Netlight JS
+
+== Blocks in js do not create new scope ==
+
+var myvar = 1;
+for(var i in [1])
+{
+   var myvar = 2;
+   console.log(myvar); // outputs 2
+}
+console.log(myvar); // outputs 1
+
+
+So How do you create local scope .. For example using a self executing function
+
+var myvar = 1
+console.log(myvar);
+(function() {
+  var myvar = 2;
+  console.log(myvar); // outputs 2
+})();
+
+console.log(myvar); // outputs 1
+
+== Dont have to write method heads ==
+
+var myfunc = function () {
+    var res = 0;
+    for(var i = 0; i < arguemts.length; i++) {
+        res += arguemnts[i];
+    }
+    return res;
+}
+
+myfunc(1,2,3) // Outputs 6
+
+== Dont have to write return statements ==
+
+var myfunc = function () {
+    var res = 0;
+    for(var i = 0; i < arguemts.length; i++) {
+        res += arguemnts[i];
+    }
+}
+
+myfunc(1,2,3) // Outputs 6
+
+== there are 2 equality operators in Java Script ==
+
+== No type conversion is done,
+
+=== Type conversion is done then check for equality
+
+Examples:
+
+'' == '0'           // false
+0 == ''             // true
+0 == '0'            // true
+
+false == 'false'    // false
+false == '0'        // true
+
+false == undefined  // false
+false == null       // false
+null == undefined   // true
+
+' \t\r\n ' == 0     // true
+
+Our advice is to never use "==". Instead, always use === and !==.
+All of the comparisons just shown produce false with the === operator.
+
+== access with [] instead of . ==
+
+var Cars =
+{
+        Volvo =
+        {
+            engine: "myEngine";
+        },
+        Saab =
+        {
+            engine: "irreplacable engine with no spare parts to be found";
+        }
+}
+
+Cars.Volvo;
+//outputs
+//Volvo =
+//        {
+//            engine: "myEngine";
+//        }
+
+Cars["Saab"];
+//outputs
+//Saab =
+//        {
+//            engine: "irreplacable engine with no spare parts to be found";
+//        }
+
+use the [] notation when accessing objects dynamically.
+
+== functions are objects and therefore can have properties ==
+
+This one is weird, but here goes,
+
+var myfunc = function() {
+    console.log(this.default);
+}
+
+myfunc.default = "myDefaultValue";
+
+myfunc(); //outputs "myDefaultValue"
+
+myfunc.default = "my Changed Value";
+
+myfunc(); //outputs "my Changed Value";
