@@ -4,12 +4,12 @@ jQuery
 Most popular JS framework, 91% of web projects using JavaScript use it.
 What it does:
 	- "write less, do more", abstraction layer
-	- browser compatibility for features
+	- browser compatibility for useful features
 Primary uses:
 	- Document manipulation (find elements, replace elements, add content)
 	- jQuery Plugins
 		* Send in options object
-	- Event listeners (registration, Event object sent to the callback function)
+	- Event listeners (registration, Event object sent to callback function)
 
 
 
@@ -22,7 +22,7 @@ Interesting functions to show:
 	show() / hide()
 
 	  Manipulate DOM
-	html() / text() / replaceWith()
+	html() / text()
 	data() / attr()
 
 	  Find related element

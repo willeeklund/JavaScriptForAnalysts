@@ -5,35 +5,76 @@
 	<title>jQuery plugin</title>
 	<link type='text/css' rel='stylesheet' href='../css/styles.css' />
 	<link type='text/css' rel='stylesheet' href='../css/liquidcarousel.css' />
+</head>
+<body>
+	<h1>jQuery Ajax</h1>
+
+	<button class="ajax_loader_json">Load resource using Ajax</button>
+	<div id="load_json_wrapper" style="display: none;">
+		<h2>Function:</h2>
+		<pre class="function_def"></pre>
+		<h2>Results:</h2>
+		<pre class="show_results"></pre>
+	</div>
+	<hr>
+	<button class="ajax_loader_html">Load HTML resource</button>
+	<div id="load_html_wrapper" style="display: none;">
+		<h2>Function:</h2>
+		<pre class="function_def"></pre>
+		<h2>Results:</h2>
+		<pre class="show_results"></pre>
+	</div>
+
+
 	<!-- jQuery loaded from Google's CDN -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		console.info("Ajax example");
-		$('.ajax_loader').on('click', function (ev) {
+		$('.ajax_loader_json').on('click', function (ev) {
 			console.log("Starting to get a resource from server.");
-			$.ajax({
-	            //url: '/JavaScriptForAnalysts/examples/ajax_resource.json',
-	            url: "ajax_resource.json",
-	            dataType: 'json',
-	            success: function (res) {
-	                console.log("result", res);
-	                $('.show_results').html(JSON.stringify(res));
-	            },
-	            error: function (err) {
-	                console.warn("Could not get the resource from server", err);
-	            }
-	        });
+			$('#load_json_wrapper .function_def').html($('#loadAjaxResource').html());
+			$('#load_json_wrapper').show();
+			loadAjaxResource();
+		});
+		$('.ajax_loader_html').on('click', function (ev) {
+			console.log("Starting to get a resource from server.");
+			$('#load_html_wrapper .function_def').html($('#loadAjaxResourceHtml').html());
+			$('#load_html_wrapper').show();
+			loadAjaxResourceHtml();
 		});
 	});
 	</script>
-</head>
-<body>
-	<h1>jQuery Ajax</h1>
-
-	<button class="ajax_loader">Ajax Loader button</button>
-	<h2>Results:</h2>
-	<pre class="show_results"></pre>
+	<script type="text/javascript" id="loadAjaxResource">
+var loadAjaxResource = function (ev) {
+    $.ajax({
+        url: "ajax_resource.json",
+        dataType: 'json',
+        success: function (res) {
+            console.log("result (json)", res);
+            $('#load_json_wrapper .show_results').html(JSON.stringify(res));
+        },
+        error: function (err) {
+            console.warn("Could not get the resource from server", err);
+        }
+    });
+};
+	</script>
+	<script type="text/javascript" id="loadAjaxResourceHtml">
+var loadAjaxResourceHtml = function (ev) {
+    $.ajax({
+        url: "ajax_resource_html.html",
+        dataType: 'text',
+        success: function (res) {
+            console.log("result (html)", res);
+            $('#load_html_wrapper .show_results').html(res);
+        },
+        error: function (err) {
+            console.warn("Could not get the resource from server", err);
+        }
+    });
+};
+	</script>
 
 </body>
 </html>

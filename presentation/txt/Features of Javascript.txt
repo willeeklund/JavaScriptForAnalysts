@@ -47,7 +47,7 @@ for(var i in [1])
    var myvar = 2;
    console.log(myvar); // outputs 2
 }
-console.log(myvar); // outputs 1
+console.log(myvar); // outputs 2
 
 
 So How do you create local scope .. For example using a self executing function
@@ -58,10 +58,9 @@ console.log(myvar);
   var myvar = 2;
   console.log(myvar); // outputs 2
 })();
-
 console.log(myvar); // outputs 1
 
-== Dont have to write method heads ==
+== Don't have to write method heads ==
 
 var myfunc = function () {
     var res = 0;
@@ -77,8 +76,8 @@ myfunc(1,2,3) // Outputs 6
 
 var myfunc = function () {
     var res = 0;
-    for(var i = 0; i < arguemts.length; i++) {
-        res += arguemnts[i];
+    for(var i = 0; i < arguments.length; i++) {
+        res += arguments[i];
     }
 }
 
@@ -86,9 +85,9 @@ myfunc(1,2,3) // Outputs 6
 
 == there are 2 equality operators in Java Script ==
 
-== No type conversion is done,
+== --> Type conversion is done then check for equality
+=== --> No type conversion is done,
 
-=== Type conversion is done then check for equality
 
 Examples:
 
@@ -112,13 +111,13 @@ All of the comparisons just shown produce false with the === operator.
 
 var Cars =
 {
-        Volvo =
+        Volvo:
         {
-            engine: "myEngine";
+            engine: "myEngine"
         },
-        Saab =
+        Saab:
         {
-            engine: "irreplacable engine with no spare parts to be found";
+            engine: "irreplacable engine with no spare parts to be found"
         }
 }
 
@@ -126,14 +125,14 @@ Cars.Volvo;
 //outputs
 //Volvo =
 //        {
-//            engine: "myEngine";
+//            engine: "myEngine"
 //        }
 
 Cars["Saab"];
 //outputs
 //Saab =
 //        {
-//            engine: "irreplacable engine with no spare parts to be found";
+//            engine: "irreplacable engine with no spare parts to be found"
 //        }
 
 use the [] notation when accessing objects dynamically.

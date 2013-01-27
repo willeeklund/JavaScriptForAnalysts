@@ -1,3 +1,42 @@
+
+== Varför ==
+
+Why should you care about javascript and for whom is this presentation made for ?
+Well nowadays Javascript will knock on your door for ANYTHING web related or
+even remotely web related that your customers are doing.
+When I joined Netlight, I started at the Betsson site team with the thought
+ "Hey its Web development. 13 year olds can do it .. How hard can it be ?",
+However, soon I discovered that I was not by far the fastest and most successful
+ developer in that team, and it was not HTML or CSS that held me back, it was JS.
+
+Questions like:
+    How do you debug JS ?
+    What is JQuery ?
+    Browser compatibility issues ?
+    Why doesn't this code that I just wrote work like Java ?
+    JS is a weak typed. What does that really mean?
+    Help, I have 1500 lines of unstructured JS, How do I structure it ?
+    How do I find information about JS Apis .. ?
+    etc etc
+
+Wilhelm here has had the same experience in his professional life and as two typical
+Netlighters we started aquiering this knowledge on the side and now one can call
+us Javascript ninjas.
+
+This presentation is made for those with no js background and want to skip the
+headache and ordeal of aquiring this knowledge.
+
+Here are the bulletpoints:
+* Features of Javascript
+* Structured JS, the Netlight way.
+* Web Development
+    * Client Side
+    * JQuery
+    * Browser c
+
+    bla bla bla
+
+
 == Bakgrund ==
 
 From Wikipedia:
@@ -28,41 +67,3 @@ Today Javascript is mainly a language for the web platform can also be found in:
 PDF Documents
 Desktop Programs and Widgets (Windows 8)
 Server side as Javascript VMs (most notably node.js)
-
-== Varför ==
-
-Why should you care about javascript and for whom is this presentation made for ?
-Well nowadays Javascript will knock on your door for ANYTHING web related or
-even remotely web related that your customers are doing.
-When I joined Netligth, I started at the Betsson site team with the thought
- "Hey its Web development. 13 year olds can do it .. How hard can it be ? ",
-However, soon I discovered that I was not by far the fastest and most successful
- developer in that team, and it was not HTML or CSS that held me back, it was JS.
-
-Questions like:
-    How do you debug JS ?
-    What is JQuery ?
-    Browser compatibility issues ?
-    Why doesn't this code that I just wrote work like Java ?
-    JS is a weak typed. What does that really mean?
-    Help, I have 1500 lines of unstructured JS, How do I structure it ?
-    How do I find information about JS Apis .. ?
-    etc etc
-
-Wilhelm here has had the same experience in his professional life and as two typical
-Netlighters we started aquiering this knowledge on the side and now one can call
-us Java script ninjas.
-
-This presentation is made for those with no js background and want to skip the
-headache and ordeal of aquiring this knowledge.
-
-Here are the bulletpoints:
-* Features of Javascript
-* Structure JS, the Netlight way.
-* Web Development
-    * Client Side
-    * JQuery
-    * Browser c
-
-    bla bla bla
-
