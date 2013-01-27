@@ -1,3 +1,20 @@
+== Introduction ==
+
+In order to understand all coding examples we need som basic understanding of JS Syntax,
+
+// Declare a variable
+var x = 1 // or "x" or 'y' or 1.01 or false etc ..
+// Ca be any of the folllowing
+// String
+// Number
+// Boolean,
+
+//Declare a function
+var myfunc = function(arg1) {
+    console.log(arg1);
+}
+
+
 == Javascript is a scripting language ==
 NOT like java. Scripting language means that there is no compiling of code making
 JS easy and fun to write but also creates a challange when writing large applications.
@@ -48,8 +65,8 @@ console.log(myvar); // outputs 1
 
 var myfunc = function () {
     var res = 0;
-    for(var i = 0; i < arguemts.length; i++) {
-        res += arguemnts[i];
+    for(var i = 0; i < arguments.length; i++) {
+        res += arguments[i];
     }
     return res;
 }
@@ -136,3 +153,28 @@ myfunc(); //outputs "myDefaultValue"
 myfunc.default = "my Changed Value";
 
 myfunc(); //outputs "my Changed Value";
+
+== JS is asynchrounous at its core ==
+
+This means that many librarys you will use will have asynchrounous behaviour and
+simple "precedural programming thinking" will not work.
+
+Example, setTimeout(<function>, millisecondsToWait)
+
+var myvar = "NotSet";
+var setMyVar = function(item) {
+    var myVar = item;
+}
+
+var logMyVar = function(item) {
+    console.log(item);
+}
+
+setTimeout(setMyVar("Set"), 1000); //Asynchrounous function, running setVar after 1000 ms has elapsed
+
+console.log(myvar); //outputs "NotSet"
+
+setTimout(logMyVar, 1000); //outputs "Set"
+
+
+
