@@ -7,28 +7,28 @@
 	<link type='text/css' rel='stylesheet' href='../css/liquidcarousel.css' />
 </head>
 <body>
-	<h1>jQuery Ajax</h1>
+<h1>Ajax using jQuery</h1>
 
-	<button class="ajax_loader_json">Load resource using Ajax</button>
-	<div id="load_json_wrapper" style="display: none;">
-		<h2>Function:</h2>
-		<pre class="function_def"></pre>
-		<h2>Results:</h2>
-		<pre class="show_results"></pre>
-	</div>
-	<hr>
-	<button class="ajax_loader_html">Load HTML resource</button>
-	<div id="load_html_wrapper" style="display: none;">
-		<h2>Function:</h2>
-		<pre class="function_def"></pre>
-		<h2>Results:</h2>
-		<pre class="show_results"></pre>
-	</div>
+<button class="ajax_loader_json">Load resource using Ajax</button>
+<div id="load_json_wrapper" style="display: none;">
+	<h2>Function:</h2>
+	<pre class="function_def"></pre>
+	<h2>Results:</h2>
+	<pre class="show_results"></pre>
+</div>
+<hr>
+<button class="ajax_loader_html">Load HTML resource</button>
+<div id="load_html_wrapper" style="display: none;">
+	<h2>Function:</h2>
+	<pre class="function_def"></pre>
+	<h2>Results:</h2>
+	<pre class="show_results"></pre>
+</div>
 
 
-	<!-- jQuery loaded from Google's CDN -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript">
+<!-- jQuery loaded from Google's CDN -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		console.info("Ajax example");
 		$('.ajax_loader_json').on('click', function (ev) {
@@ -44,8 +44,8 @@
 			loadAjaxResourceHtml();
 		});
 	});
-	</script>
-	<script type="text/javascript" id="loadAjaxResource">
+</script>
+<script type="text/javascript" id="loadAjaxResource">
 var loadAjaxResource = function (ev) {
     $.ajax({
         url: "ajax_resource.json",
@@ -59,8 +59,8 @@ var loadAjaxResource = function (ev) {
         }
     });
 };
-	</script>
-	<script type="text/javascript" id="loadAjaxResourceHtml">
+</script>
+<script type="text/javascript" id="loadAjaxResourceHtml">
 var loadAjaxResourceHtml = function (ev) {
     $.ajax({
         url: "ajax_resource_html.html",
@@ -74,7 +74,7 @@ var loadAjaxResourceHtml = function (ev) {
         }
     });
 };
-	</script>
-
+</script>
+<p style="height:800px">&nbsp;</p>
 </body>
 </html>

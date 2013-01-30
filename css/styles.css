@@ -1,8 +1,8 @@
 body {
-	background-color:#C2C7C2;
+	background-color:#444;
 	font-family: verdana, arial;
-	color: #222;
-	font-size:16px;
+	color: #fff;
+	font-size:18px;
 	min-width:320px;
 }
 
@@ -41,12 +41,12 @@ pre, blockquote {
 	-moz-border-radius:10px 10px 10px 10px;
 	-webkit-border-radius:10px 10px 10px 10px;
 	border-radius:10px 10px 10px 10px;
-	background-color:#DFE7DD;
+	background-color:#000;
 	margin:15px 0;
 	padding:15px;
 }
 
 pre, code {
 	font-family:monospace;
-	font-size:12px;
+	font-size:16px;
 }
