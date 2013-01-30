@@ -21,6 +21,8 @@ JS easy and fun to write but also creates a challange when writing large applica
 Errors that usually are compile errors ends ut as runtime errors
 
 
+
+
 == Javascript is weak typed ==
 
 That means that you only have the basic building blocks for example
@@ -38,6 +40,7 @@ That means that you only have the basic building blocks for example
 == Javascript chews on ==
 
 Fråga Netlight JS
+Hue exekveras javascript ?? //utveckla, tänk när det laddas, visa exempel
 
 == Blocks in js do not create new scope ==
 
@@ -107,7 +110,7 @@ null == undefined   // true
 Our advice is to never use "==". Instead, always use === and !==.
 All of the comparisons just shown produce false with the === operator.
 
-== access with [] instead of . ==
+== access with [] or  . ==
 
 var Cars =
 {

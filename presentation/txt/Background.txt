@@ -1,5 +1,12 @@
+Core charach
+asynchronitit, prototypbaserat arv, this, globals, closures, cope, first class function,
+lista utav verktyp utav ramverk.
+
 
 == Varför ==
+
+
+
 
 Why should you care about javascript and for whom is this presentation made for ?
 Well nowadays Javascript will knock on your door for ANYTHING web related or
@@ -67,3 +74,5 @@ Today Javascript is mainly a language for the web platform can also be found in:
 PDF Documents
 Desktop Programs and Widgets (Windows 8)
 Server side as Javascript VMs (most notably node.js)
+
+Datatyper kan räknas på egen hand. Finns inte länkade listor,
