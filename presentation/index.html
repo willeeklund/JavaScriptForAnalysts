@@ -63,6 +63,52 @@
 				</section>
 
 				<section>
+					<h2>onLoad</h2>
+					<pre class=""><code contenteditable>
+<div id="length">asd</div>
+<script type="text/javascript">
+	$('#length').val($('.special').length);
+</script>
+<div class="special"></div>
+<div class="special"></div>
+<div class="special"></div>
+					</code></pre>
+
+					<p class="fragment">
+						Always use === and !== <br /><br />
+						All of the comparisons just shown <br />produce false with the === operator.
+					</p>
+					<p style="height:200px">&nbsp;</p>
+				</section>
+
+
+				<section>
+					<h2>Loosely typed</h2>
+					<pre class="fragment"><code contenteditable>
+'' == '0'           // false
+0 == ''             // true
+0 == '0'            // true
+
+false == 'false'    // false
+false == '0'        // true
+
+false == undefined  // false
+false == null       // false
+null == undefined   // true
+
+' \t\r\n ' == 0     // true
+					</code></pre>
+
+					<p class="fragment">
+						Always use === and !== <br /><br />
+						All of the comparisons just shown <br />produce false with the === operator.
+					</p>
+					<p style="height:200px">&nbsp;</p>
+				</section>
+
+
+
+				<section>
 					<h2>Clientside vs Serverside</h2>
 					<p style="height:200px">&nbsp;</p>
 				</section>
@@ -76,6 +122,11 @@
 						<li class="fragment"><h2>Plugins!</h2></li>
 					</ul>
 					<p style="height:200px">&nbsp;</p>
+				</section>
+
+				<section id="jquery_example">
+					<iframe src="../examples/jquery_example.html" height="100%" width="100%">
+					</iframe>
 				</section>
 
 				<section>
