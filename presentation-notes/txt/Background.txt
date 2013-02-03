@@ -3,18 +3,28 @@ asynchronitit, prototypbaserat arv, this, globals, closures, cope, first class f
 lista utav verktyp utav ramverk.
 
 
-== Varför ==
+== Why should you care about javascript ? ==
 
-
-
-
+* Anything Web Related
 Why should you care about javascript and for whom is this presentation made for ?
 Well nowadays Javascript will knock on your door for ANYTHING web related or
 even remotely web related that your customers are doing.
+
+* Grow as a developer
+Some developers arent used to functional thinking, and after some time with javascript,
+I feel that I write more consise and expressive code in my c# projects
+
+
+== Who is this presentation made for ? ==
 When I joined Netlight, I started at the Betsson site team with the thought
  "Hey its Web development. 13 year olds can do it .. How hard can it be ?",
 However, soon I discovered that I was not by far the fastest and most successful
  developer in that team, and it was not HTML or CSS that held me back, it was JS.
+
+ Wilhelm here has had the same experience in his professional life and as two typical
+Netlighters we started aquiering this knowledge on the side and now one can call
+us Javascript ninjas.
+
 
 Questions like:
     How do you debug JS ?
@@ -26,12 +36,12 @@ Questions like:
     How do I find information about JS Apis .. ?
     etc etc
 
-Wilhelm here has had the same experience in his professional life and as two typical
-Netlighters we started aquiering this knowledge on the side and now one can call
-us Javascript ninjas.
+
 
 This presentation is made for those with no js background and want to skip the
 headache and ordeal of aquiring this knowledge.
+
+== Table Of Contents ==
 
 Here are the bulletpoints:
 * Features of Javascript
@@ -51,10 +61,10 @@ From Wikipedia:
 commonly implemented as part of a web browser in order to create
 enhanced user interfaces and dynamic websites."
 
-Netscape had an idea to put the easy o use HyperTalk event driven based on button and fields
-brendan ike. Scheme interpreter.
+* Netscape had an idea back in 1995  to put the easy o use HyperTalk event driven based on button and fields
+* Hired This Guy Brendan Iche
 
-Java, Scheme, Self
+Scheme, Self
 
 JavaScript
 
@@ -64,6 +74,8 @@ the syntax that looked like java, function model of scheme, prototypal objects o
 Developed under the name Mocha, LiveScript was the official name for the
 language when it first shipped in beta releases of Netscape Navigator 2.0
 in September 1995.
+
+== JavaScript is == 
 
 Java script is
     object oriented

@@ -45,34 +45,152 @@
 				</section>
 
 				<section>
-					<h2>What is JavaScript?</h2>
+					<h2>Why should you care about javascript ?</h2>
 					<ul>
-						<li class="fragment">Script</li>
-						<li class="fragment">(Mostly) Web</li>
+						<li class="fragment">Anything Web Related</li>
+						<li class="fragment">Grow as a developer</li>
 					</ul>
-					<p style="height:200px">&nbsp;</p>
 				</section>
 
 				<section>
-					<h2>Why use JavaScript?</h2>
+					<h2>Who is this presentation made for ?</h2>
 					<ul>
-						<li class="fragment">Interaction and behaviour</li>
-						<li class="fragment">It's cool!</li>
-					</ul>
-					<p style="height:200px">&nbsp;</p>
+						<li class="fragment">Netlighters with no background in js</li>
+						<li class="fragment">Some background in HTML and CSS</li>
+                        <li class="fragment">Basic Syntax/ Funny JS Features</li>
+                        <li class="fragment">Which IDE should I use ?</li>
+                        <li class="fragment">How do you debug JS ?</li>
+                        <li class="fragment">What is JQuery ?</li>
+                        <li class="fragment">I am a Java developer, What are the differences ?</li>
+                        <li class="fragment">JS is a weak typed. What does that really mean?</li>
+                        <li class="fragment">Help, I have 1500 lines of unstructured JS, How do I structure it ?</li>
+                    </ul>
 				</section>
 
+                <section>
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li class="fragment">Background / Basic Syntax</li>
+                        <li class="fragment">Features of Javascript (Code Examples)</li>
+                        <li class="fragment">Structured JS, the Netlight way.</li>
+                        <li class="fragment">Web Development
+                            <ul>
+                                <li class="fragment">JQuery</li>
+                                <li class="fragment">Client vs Server Side</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">JS IDE:s /Debug JS</li>
+                        <li class="fragment">Deploy JS projects</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Background</h2>
+                    <p class="fragment">From Wikipedia:<br/>
+                        "JavaScript (JS) is an open source client-side scripting language
+                        commonly implemented as part of a web browser in order to create
+                        enhanced user interfaces and dynamic websites."</p>
+
+                </section>
+
+                <section>
+                    <h2>Brendan Eich</h2>
+                    <img class="fragment" src="./img/brendan_Eich.jpeg"/>
+                    <p class="fragment">"The Syntax is to weird looking, Make it more like Java"</p>
+                </section>
+
+                <section>
+                    <h2>Javascript Is</h2>
+					<ul>
+						<li class="fragment">Object Oreiented</li>
+						<li class="fragment">Dynamic</li>
+						<li class="fragment">Functional</li>
+						<li class="fragment">Prototype-based</li>
+						<li class="fragment">Weakly typed</li>
+					</ul>
+                </section>
+
 				<section>
-					<h2>onLoad</h2>
+                    <h2>Basic Syntax</h2>
+
+					<ul>
+						<li>Data Types:</li>
+						<ul>
+							<li>Strings</li>
+							<li>Numbers</li>
+							<li>Booleans</li>
+							<li>Arrays</li>
+							<li>HashMaps (Dictionaries)</li>
+						</ul>
+					</ul>
 					<pre class=""><code contenteditable>
-<div id="length">asd</div>
+var myString = "myString";
+var myInt = 0;
+var myFloat = 0.1;
+var myBool = true;
+var myArray = ["stringElement", 1];
+var myMap = {name : "Anders", age: 28};
+myMap.Name; //Outputs 'Anders'
+myMap.age; //Outputs 'Age'
 <script type="text/javascript">
 	$('#length').val($('.special').length);
 </script>
-<div class="special"></div>
-<div class="special"></div>
-<div class="special"></div>
-					</code></pre>
+</code></pre>
+                </section>
+
+            	<section>
+	                <h2>Javascript Functions</h2>
+	                <p class="fragment">Js functions are first class objects and can therefore have properties</p>
+
+	                <pre class="fragment"><code contenteditable>
+var log = function(inputVal) {
+	if(inputVal != null)
+	{
+		console.log(inputVal);
+		return;
+	}
+	console.log(this.default);	
+
+}
+myFunc.default = "Default Value";
+log("Log Me") //Outputs 'Log Me
+log() //Outputs 'Default Value'
+<script type="text/javascript">
+$('#length').val($('.special').length);
+</script>
+</code></pre>
+            	</section>
+
+
+            	<section>
+	                <h2>Javascript Functions</h2>
+	                <p class="fragment">Js functions are first class objects and can therefore be passed around</p>
+
+	                <pre class="fragment"><code contenteditable>
+var addTwentyTo = function(inputVal, callback) {
+	callback(inputVal + 20);
+}
+addTwentyTo(2, log); //Outputs '22'
+<script type="text/javascript">
+$('#length').val($('.special').length);
+</script>
+</code></pre>
+            	</section>
+
+
+                <section>
+					<h2>onLoad</h2>
+					<pre class="">
+						<code contenteditable>
+							<div id="length">asd</div>
+							<script type="text/javascript">
+								$('#length').val($('.special').length);
+							</script>
+							<div class="special"></div>
+							<div class="special"></div>
+							<div class="special"></div>
+						</code>
+					</pre>
 
 					<p class="fragment">
 						Always use === and !== <br /><br />
