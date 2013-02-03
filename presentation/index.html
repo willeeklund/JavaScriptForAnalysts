@@ -22,6 +22,7 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
+		<script type="text/javascript" src="../js/lib/jquery.js"></script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -130,12 +131,50 @@ null == undefined   // true
 						</iframe>
 					</section>
 
-					<section>
+					<section id="css_selectors">
 						<h2>CSS Selectors</h2>
 						<ul>
 							<li>id: $('#myId')</li>
 							<li>class: $('.myClass')</li>
 						</ul>
+					</section>
+
+					<section id="events">
+						<h2>Event listeners</h2>
+						<pre class=""><code contenteditable>$('.mySelector').on('click', function() {
+  // React to the click
+});</code></pre>
+						<ul class="fragment">
+							<li style="">"click"</li>
+							<li style="">"resize"</li>
+							<li style="">"submit"</li>
+						</ul>
+
+						<ul class="fragment" style="width: 100%;">
+							<li>
+								The event object:
+								<pre class=""><code contenteditable>function (event) {
+  event.preventDefault();
+  // Do something
+}</code></pre>
+							</li>
+						</ul>
+					</section>
+
+					<section id="custom_events">
+						<h2 class="">Custom events</h2>
+						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
+  alert('Now our custom event happened!');
+});
+$('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
+						<span class="mySelector"></span>
+						<button id="run_custom_event">Run code</button>
+						<script type="text/javascript">
+							// alert('Now our custom event happened! param1=' + param1 + ", param2=" + param2);
+							$('#run_custom_event').on('click', function() {
+								eval($('#custom_event_code').text());
+							});
+						</script>
 					</section>
 				</section>
 
