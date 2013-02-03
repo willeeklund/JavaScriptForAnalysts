@@ -51,3 +51,12 @@ pre, code {
 	font-size:16px;
 }
 
+button, .btn {
+	font-size: 32px;
+}
+
+.reveal iframe {
+	height:100%;
+	min-height: 700px;
+	width:100%;
+}

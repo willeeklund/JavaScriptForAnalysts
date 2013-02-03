@@ -13,6 +13,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
 		<!-- For syntax highlighting -->
@@ -301,7 +303,7 @@ null == undefined   // true
 					<section id="custom_events">
 						<h2 class="">Custom events</h2>
 						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
-  alert('Now our custom event happened!');
+  alert('Now our custom event happened! ');
 });
 $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 						<span class="mySelector"></span>
@@ -329,7 +331,7 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 
 				<section>
 					<section id="jquery_plugin">
-						<iframe src="../examples/jquery_plugin_carousel.html" height="100%" width="100%">
+						<iframe src="../examples/jquery_plugin_carousel.html">
 						</iframe>
 					</section>
 
