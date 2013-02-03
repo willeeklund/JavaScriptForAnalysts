@@ -51,40 +51,46 @@
 	<span class="next"></span>
 </div>
 
-<p>Include the jQuery library and the liquid plugin:</p>
-<pre>
-&lt;script type="text/javascript" src="js/lib/jquery.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="js/lib/jquery.liquidcarousel.js"&gt;&lt;/script&gt;
-</pre>
+<div id="explanation" style="display: none;">
+	<p>Include the jQuery library and the liquid plugin:</p>
+	<pre>
+	&lt;script type="text/javascript" src="js/lib/jquery.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="js/lib/jquery.liquidcarousel.js"&gt;&lt;/script&gt;
+	</pre>
 
-Then you need to add the HTML structure as a list of items and the navigation buttons:
-<pre>
-&lt;div id="image_slider"&gt;
-	&lt;span class="previous"&gt;&lt;/span&gt;
-	&lt;div class="wrapper"&gt;
-		&lt;ul&gt;
-			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image01.jpg" alt="image01"/&gt;&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image02.jpg" alt="image02"/&gt;&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image03.jpg" alt="image03"/&gt;&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image04.jpg" alt="image04"/&gt;&lt;/a&gt;&lt;/li&gt;
-			...
-		&lt;/ul&gt;
+	Then you need to add the HTML structure as a list of items and the navigation buttons:
+	<pre>
+	&lt;div id="image_slider"&gt;
+		&lt;span class="previous"&gt;&lt;/span&gt;
+		&lt;div class="wrapper"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image01.jpg" alt="image01"/&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image02.jpg" alt="image02"/&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image03.jpg" alt="image03"/&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#"&gt;&lt;img src="image04.jpg" alt="image04"/&gt;&lt;/a&gt;&lt;/li&gt;
+				...
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;span class="next"&gt;&lt;/span&gt;
 	&lt;/div&gt;
-	&lt;span class="next"&gt;&lt;/span&gt;
-&lt;/div&gt;
-</pre>
+	</pre>
 
-<p>Finally initiate the script using the $(document).ready() function:</p>
-<pre>
-$(document).ready(function() {
-	console.log("Plugin is initiated when document is loaded and ready");
-	$('#image_slider').liquidcarousel({
-		height: 129,		//the height of the list
-		duration: 500,		//the duration of the animation, in ms
-		hidearrows: true	//hide arrows if all of the list items are visible
+	<p>Finally initiate the script using the $(document).ready() function:</p>
+	<pre>
+	$(document).ready(function() {
+		console.log("Plugin is initiated when document is loaded and ready");
+		$('#image_slider').liquidcarousel({
+			height: 129,		//the height of the list
+			duration: 500,		//the duration of the animation, in ms
+			hidearrows: true	//hide arrows if all of the list items are visible
+		});
 	});
-});
-</pre>
+	</pre>
+
+</div>
+
+<button onClick="$(this).hide(); $('#explanation').slideDown();">More...</button>
+
 <p style="height:800px">&nbsp;</p>
 
 <script type="text/javascript">

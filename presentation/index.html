@@ -13,6 +13,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
 		<!-- For syntax highlighting -->
@@ -55,6 +57,10 @@
 						<li class="fragment">Anything Web Related</li>
 						<li class="fragment">Grow as a developer</li>
 					</ul>
+
+					<aside class="notes">
+						This is why!
+					</aside>
 				</section>
 
 				<section>
@@ -62,7 +68,13 @@
 					<ul>
 						<li class="fragment">Netlighters with no background in js</li>
 						<li class="fragment">Some background in HTML and CSS</li>
-                        <li class="fragment">Basic Syntax/ Funny JS Features</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h2>What will we do today?</h2>
+					<ul>
+						<li class="fragment">Basic Syntax/ Funny JS Features</li>
                         <li class="fragment">Which IDE should I use ?</li>
                         <li class="fragment">How do you debug JS ?</li>
                         <li class="fragment">What is JQuery ?</li>
@@ -77,26 +89,35 @@
                     <ul>
                         <li class="fragment">Background / Basic Syntax</li>
                         <li class="fragment">Features of Javascript (Code Examples)</li>
-                        <li class="fragment">Structured JS, the Netlight way.</li>
                         <li class="fragment">Web Development
                             <ul>
                                 <li class="fragment">JQuery</li>
                                 <li class="fragment">Client vs Server Side</li>
                             </ul>
                         </li>
+                        <li class="fragment">Structured JS, the Netlight way.</li>
                         <li class="fragment">JS IDE:s /Debug JS</li>
                         <li class="fragment">Deploy JS projects</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>Background</h2>
-                    <p class="fragment">From Wikipedia:<br/>
-                        "JavaScript (JS) is an open source client-side scripting language
-                        commonly implemented as part of a web browser in order to create
-                        enhanced user interfaces and dynamic websites."</p>
+	                <section>
+	                    <h2>Background</h2>
+	                    <p class="fragment">From Wikipedia:<br/>
+	                        "JavaScript (JS) is an open source client-side scripting language
+	                        commonly implemented as part of a web browser in order to create
+	                        enhanced user interfaces and dynamic websites."</p>
+	                </section>
 
-                </section>
+	                <section>
+	                    <h2>Background</h2>
+	                    <p class="">From Wikipedia:<br/>
+	                        "JavaScript (JS) is an open source <span style="color: red">client-side</span> scripting language
+	                        commonly implemented as part of a web browser in order to create
+	                        enhanced user interfaces and dynamic websites."</p>
+	                </section>
+	            </section>
 
                 <section>
                     <h2>Brendan Eich</h2>
@@ -153,7 +174,7 @@ var log = function(inputVal) {
 		console.log(inputVal);
 		return;
 	}
-	console.log(this.default);	
+	console.log(this.default);
 
 }
 myFunc.default = "Default Value";
@@ -262,7 +283,7 @@ null == undefined   // true
 
 					<section id="events">
 						<h2>Event listeners</h2>
-						<pre class=""><code contenteditable>$('.mySelector').on('click', function() {
+						<pre class=""><code contenteditable>$('.mySelector').on('click', function(event) {
   // React to the click
 });</code></pre>
 						<ul class="fragment">
@@ -285,7 +306,7 @@ null == undefined   // true
 					<section id="custom_events">
 						<h2 class="">Custom events</h2>
 						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
-  alert('Now our custom event happened!');
+  alert('Now our custom event happened! ');
 });
 $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 						<span class="mySelector"></span>
@@ -313,7 +334,7 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 
 				<section>
 					<section id="jquery_plugin">
-						<iframe src="../examples/jquery_plugin_carousel.html" height="100%" width="100%">
+						<iframe src="../examples/jquery_plugin_carousel.html">
 						</iframe>
 					</section>
 
