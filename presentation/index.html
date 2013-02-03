@@ -21,6 +21,10 @@
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+
+			$('.').on('click', function() {
+				eval($('#custom_event_code').text());
+			});
 		</script>
 		<script type="text/javascript" src="../js/lib/jquery.js"></script>
 
@@ -133,10 +137,9 @@ var myArray = ["stringElement", 1];
 var myMap = {name : "Anders", age: 28};
 myMap.Name; //Outputs 'Anders'
 myMap.age; //Outputs 'Age'
-<script type="text/javascript">
-	$('#length').val($('.special').length);
-</script>
 </code></pre>
+				<button class="btn btn-large eval">Submit</button>
+				<p class="output"></p>
                 </section>
 
             	<section>
