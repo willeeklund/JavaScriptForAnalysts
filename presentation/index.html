@@ -44,10 +44,8 @@
 
 				<section>
 					<h1>JavaScript for Analysts</h1>
-					<p>
-						<small>Wilhelm Eklund [wilhelm.eklund@netlight.com] <br />
-							&& Anders Bäck [anders.back@netlight.com]</small>
-					</p>
+					<p>Wilhelm Eklund [wilhelm.eklund@netlight.com] <br />
+							&& Anders Bäck [anders.back@netlight.com]</p>
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
@@ -86,18 +84,18 @@
 
                 <section>
                     <h2>Table of Contents</h2>
-                    <ul>
-                        <li class="fragment">Background / Basic Syntax</li>
-                        <li class="fragment">Features of Javascript (Code Examples)</li>
-                        <li class="fragment">Web Development
+                    <ul class="fragment">
+                        <li class="">Background / Basic Syntax</li>
+                        <li class="">Features of Javascript (Code Examples)</li>
+                        <li class="">Web Development
                             <ul>
-                                <li class="fragment">JQuery</li>
-                                <li class="fragment">Client vs Server Side</li>
+                                <li class="">JQuery</li>
+                                <li class="">Client vs Server Side</li>
                             </ul>
                         </li>
-                        <li class="fragment">Structured JS, the Netlight way.</li>
-                        <li class="fragment">JS IDE:s /Debug JS</li>
-                        <li class="fragment">Deploy JS projects</li>
+                        <li class="">Structured JS, the Netlight way.</li>
+                        <li class="">JS IDE:s /Debug JS</li>
+                        <li class="">Deploy JS projects</li>
                     </ul>
                 </section>
 
@@ -106,14 +104,6 @@
 	                    <h2>Background</h2>
 	                    <p class="fragment">From Wikipedia:<br/>
 	                        "JavaScript (JS) is an open source client-side scripting language
-	                        commonly implemented as part of a web browser in order to create
-	                        enhanced user interfaces and dynamic websites."</p>
-	                </section>
-
-	                <section>
-	                    <h2>Background</h2>
-	                    <p class="">From Wikipedia:<br/>
-	                        "JavaScript (JS) is an open source <span style="color: red">client-side</span> scripting language
 	                        commonly implemented as part of a web browser in order to create
 	                        enhanced user interfaces and dynamic websites."</p>
 	                </section>
@@ -128,7 +118,7 @@
                 <section>
                     <h2>Javascript Is</h2>
 					<ul>
-						<li class="fragment">Object Oreiented</li>
+						<li class="fragment">Object Oriented</li>
 						<li class="fragment">Dynamic</li>
 						<li class="fragment">Functional</li>
 						<li class="fragment">Prototype-based</li>
@@ -207,7 +197,7 @@ $('#length').val($('.special').length);
 					<h2>onLoad</h2>
 					<pre class="">
 						<code contenteditable>
-							<div id="length">asd</div>
+							<div id="length"></div>
 							<script type="text/javascript">
 								$('#length').val($('.special').length);
 							</script>
@@ -217,10 +207,7 @@ $('#length').val($('.special').length);
 						</code>
 					</pre>
 
-					<p class="fragment">
-						Always use === and !== <br /><br />
-						All of the comparisons just shown <br />produce false with the === operator.
-					</p>
+
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
@@ -310,7 +297,7 @@ null == undefined   // true
 });
 $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 						<span class="mySelector"></span>
-						<button id="run_custom_event">Run code</button>
+						<button id="run_custom_event" class="btn-large">Run code</button>
 						<script type="text/javascript">
 							// alert('Now our custom event happened! param1=' + param1 + ", param2=" + param2);
 							$('#run_custom_event').on('click', function() {
@@ -369,6 +356,13 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 						<li class="fragment">logging</li>
 					</ol>
 					<pre class="fragment"><code contenteditable>console.log("title", var1, var2);</code></pre>
+
+					<p style="height:200px">&nbsp;</p>
+				</section>
+
+				<section>
+					<h2>Thank you!</h2>
+
 
 					<p style="height:200px">&nbsp;</p>
 				</section>
