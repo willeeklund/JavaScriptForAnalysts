@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>jQuery</title>
+	<link rel="stylesheet" href="../css/tomorrow-night-bright.css" />
 	<link type='text/css' rel='stylesheet' href='../css/styles.css' />
 </head>
 <body>
@@ -10,24 +11,28 @@
 
 <button id="button1" class="btn-large">Action button</button>
 <h2>Register event handler:</h2>
-<pre class="register_event">$('#button1').on('click', handle_button1_click );</pre>
+<pre><code class="register_event js">$('#button1').on('click', handle_button1_click );</code></pre>
 
 <div id="button1_info" style="display: none;">
 	<h2>Function on click:</h2>
-	<pre class="function_def"></pre>
+	<pre><code class="function_def"></code></pre>
 </div>
 
 
 <script type="text/javascript" src="../js/lib/jquery.js"></script>
+<script type="text/javascript" src='../presentation/plugin/highlight/highlight.js'></script>
 <script type="text/javascript">
+	hljs.initHighlightingOnLoad();
 	$(document).ready(function() {
+		$('#button1_info .function_def').html($('#handle_button1_click').html());
 		console.info("Ajax example");
 		$('#button1').on('click', handle_button1_click );
 		$('#button1').on('click', function (ev) {
 			console.log("Button 1 is clicked");
-			$('#button1_info .function_def').html($('#handle_button1_click').html());
+
 			$('#button1_info').show();
 		});
+
 	});
 </script>
 <script type="text/javascript" id="handle_button1_click">
