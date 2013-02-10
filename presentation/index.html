@@ -245,34 +245,15 @@ log(o.value)
 
 				<section>
 					<h2>Clientside vs Serverside</h2>
-					<p style="height:200px">&nbsp;</p>
-				</section>
-
-				<section>
-					<h1>jQuery</h1>
-					<ul>
-						<li class="fragment">Framework</li>
-						<li class="fragment">Document manipulation</li>
-						<li class="fragment">Event listeners</li>
-						<li class="fragment"><h2>Plugins!</h2></li>
+					<ul class="fragment">
+						<li>Run on the users machine</li>
+						<li></li>
+						<li></li>
 					</ul>
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
 				<section>
-					<section id="jquery_example">
-						<iframe src="../examples/jquery_example.html" height="100%" width="100%">
-						</iframe>
-					</section>
-
-					<section id="css_selectors">
-						<h2>CSS Selectors</h2>
-						<ul>
-							<li>id: $('#myId')</li>
-							<li>class: $('.myClass')</li>
-						</ul>
-					</section>
-
 					<section id="events">
 						<h2>Event listeners</h2>
 						<pre class=""><code contenteditable>$('.mySelector').on('click', function(event) {
@@ -280,21 +261,22 @@ log(o.value)
 });</code></pre>
 						<ul class="fragment">
 							<li style="">"click"</li>
-							<li style="">"resize"</li>
 							<li style="">"submit"</li>
+							<li style="">"keypress"</li>
 						</ul>
-
-						<ul class="fragment" style="width: 100%;">
-							<li>
-								The event object:
-								<pre class=""><code contenteditable>function (event) {
-  event.preventDefault();
-  // Do something
-}</code></pre>
-							</li>
-						</ul>
+						<p style="height:200px">&nbsp;</p>
 					</section>
 
+					<section>
+						<h2>The event object</h2>
+								<pre class=""><code contenteditable>function (event) {
+    event.preventDefault();
+    // Do something
+}</code></pre>
+						<p style="height:200px">&nbsp;</p>
+					</section>
+
+					<!--
 					<section id="custom_events">
 						<h2 class="">Custom events</h2>
 						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
@@ -309,28 +291,47 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 								eval($('#custom_event_code').text());
 							});
 						</script>
+						<p style="height:200px">&nbsp;</p>
 					</section>
+					-->
 				</section>
 
 				<section>
-					<h2>jQuery plugin structure</h2>
-					<p>Extentions of jQuery</p>
-					<ol class="fragment">
-						<li>Include jQuery and the plugin (in that order)</li>
-						<li>Create HTML structure according to what your plugin wants</li>
-						<li>Initiate the plugin using $('.selectorOfHtmlStructure').nameOfMyPlugin(optionsObject)</li>
-					</ol>
-
+					<h1>jQuery</h1>
+					<ul>
+						<li class="fragment">Framework</li>
+						<li class="fragment">Document manipulation</li>
+						<li class="fragment">Event listeners</li>
+						<li class="fragment"><h2>Plugins!</h2></li>
+					</ul>
+					<img src="../img/jquery_usage_statistics.png" class="image fragment">
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
-				<section>
-					<section id="jquery_plugin">
+				<section id="jquery_example">
+					<iframe src="../examples/jquery_example.html" height="100%" width="1000px">
+					</iframe>
+				</section>
+
+				<section id="jquery_plugins">
+					<section>
+						<h2>jQuery plugin structure</h2>
+						<p>Extentions of jQuery</p>
+						<ol class="fragment">
+							<li>Include jQuery and the plugin (in that order)</li>
+							<li>Create HTML structure according to what your plugin wants</li>
+							<li>Initiate the plugin using $('.selectorOfHtmlStructure').nameOfMyPlugin(optionsObject)</li>
+						</ol>
+
+						<p style="height:200px">&nbsp;</p>
+					</section>
+
+					<section>
 						<iframe src="../examples/jquery_plugin_carousel.html">
 						</iframe>
 					</section>
 
-					<section id="jquery_plugin2">
+					<section>
 						<h2>Thousand of plugins!</h2>
 						<ul class="fragment">
 							<li>Steel with pride!</li>
@@ -345,36 +346,14 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 					</section>
 				</section>
 
-				<section id="ajax">
-					<iframe src="../examples/ajax_example.html" height="100%" width="100%">
-					</iframe>
-
-					<aside class="notes">
-						Notes on the Ajax presentation.
-					</aside>
-				</section>
-
-				<section>
-					<h2>Debugging JavaScript</h2>
-					 <ol>
-						<li class="fragment">breakpoints</li>
-						<li class="fragment">logging</li>
-					</ol>
-					<pre class="fragment"><code contenteditable>console.log("title", var1, var2);</code></pre>
-
-					<p style="height:200px">&nbsp;</p>
-				</section>
-
 				<section>
 					<h2>Thank you!</h2>
-
-
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
 			</div>
 
-			
+
 			<div class="footer" />
 		</div>
 
