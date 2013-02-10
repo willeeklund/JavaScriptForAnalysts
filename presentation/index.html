@@ -57,7 +57,7 @@
                 </section>
 
 				<section>
-					<h2>Expectation MGMT</h2>
+					<h2>Expectation</h2>
 				</section>
 
                 <section>
@@ -78,11 +78,6 @@
                     <h1>1995</h1>
                     <img src="img/netscape_navgator.jpg">
                     <p class="fragment">"This is to weird looking, make the syntax look more like Java"</p>
-                </section>
-
-                <section>
-                    <h1>1997 &gt </h1>
-                    <img src="img/jspopup.jpeg" height="300px">
                 </section>
 
                 <section>
@@ -120,7 +115,8 @@
                     <ul>
                         <li>A scripting language</li>
                         <li>Weakly typed</li>
-                        <li>Functional</li>
+                        <li>Object Oriented</li>
+                        <li>Non-blocking</li>
                     </ul>
                 </section>
                 <section>
@@ -160,14 +156,14 @@ var myBool = true;
 var myArray = ["stringElement", 1];
 var myMap = {name : "Anders", age: 28};
 log(myMap.name); //Outputs 'Anders'
-log(myMap.age); //Outputs 'Age'
+log(myMap.age); //Outputs '28'
 </code></pre>
                 <button class="btn btn-large eval">Submit</button>
                 <p class="output"></p>
                 </section>
 
                 <section>
-                    <p>JS Functions are first class objects</p>
+                    <p>JS Functions are objects</p>
                 </section>
 
                 <section class="codeblock">
@@ -204,7 +200,7 @@ log(addTwoNumbers(1,2));
                 </section>
 
 				<section>
-					<pre class="fragment"><code contenteditable>
+					<pre><code contenteditable>
 '' == '0'           // false
 0 == ''             // true
 0 == '0'            // true
@@ -228,7 +224,7 @@ null == undefined   // true
 
 
                 <section>
-                    <p>Javascript is Object Oreiented</p>
+                    <p>Javascript is Object Oriented</p>
                 </section>
 
                 <section class="codeblock">
@@ -238,6 +234,23 @@ this.value = 5;
 };
 var o = new myobject();
 log(o.value)
+</code></pre>
+                    <button class="btn btn-large eval">Submit</button>
+                    <p class="output"></p>
+                </section>
+
+                <section>
+                    <p>Javascript is Non - blocking</p>
+                </section>
+
+                <section class="codeblock">
+<pre ><code contenteditable>var myArray = [0,1,2];
+    myArray.forEach(function(item) {
+    setTimeout(function() {
+    log(item);
+    }, Math.random()*11 * 50);
+    });
+    log("Done");
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
                     <p class="output"></p>
@@ -421,7 +434,9 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
                 eval($($(this).prev().children()).text());
             });
 
-
+            $("p.output").click(function() {
+                $("p.output").html("");
+            });
         </script>
 
 	</body>

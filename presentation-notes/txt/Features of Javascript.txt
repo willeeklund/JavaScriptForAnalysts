@@ -75,17 +75,6 @@ var myfunc = function () {
 
 myfunc(1,2,3) // Outputs 6
 
-== Dont have to write return statements ==
-
-var myfunc = function () {
-    var res = 0;
-    for(var i = 0; i < arguments.length; i++) {
-        res += arguments[i];
-    }
-}
-
-myfunc(1,2,3) // Outputs 6
-
 == there are 2 equality operators in Java Script ==
 
 == --> Type conversion is done then check for equality

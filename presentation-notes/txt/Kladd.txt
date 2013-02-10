@@ -50,7 +50,6 @@ TODO
 * läses in direkt från källkoden
 * lös struktur, löst typat
 
-
 == Basic syntax ==
 Räkna upp syntaxen,
 berätta att this is it
@@ -63,8 +62,6 @@ return a+b;
 };
 addTwoNumbers.foo = "bar";
 addTwoNumbers;
-
-
 
 === Can be sent to other functions ===
 var addTwoNumbers = function(a,b) {
@@ -81,13 +78,18 @@ applyFunction(1,4, addTwoNumbers);
 * Overloading
 * no type checking at function calls
 
-
-
 === Exempel 1 ===
 var foo = function(bar) {
 log(bar);
 };
 foo(1); // foo(5),  foo("lkndfln")
+
+=== Exempel 1,5 ===
+var foo = function(bar) {
+log(bar);
+};
+foo(1, "ijnjkfd");
+
 
 === Exempel 2 ===
 var foo = function() {
@@ -126,8 +128,11 @@ null == undefined   // true
 ' \t\r\n ' == 0     // true
 
 == Javascript är objectorienterat ==
+* Skapa instanser utav ett object
+* Ärva från objekt
+
 1. Skapa nya object;
-2.
+2. Visa prototype based inheritance
 3. Visa this problemet;
 
 === Object Oriented ===
@@ -167,3 +172,16 @@ var context = function(fcn) {
 }
 
 context(o.logName);
+
+=== JS is non blocking .. ===
+* OM du har så här mycket kod, så kommer javascript köra igenom all kod, kommer ta några hundradelar.
+* Asynchrona bibliotek
+* Tänka asynchront
+
+var myArray = [0,1,2];
+    myArray.forEach(function(item) {
+    setTimeout(function() {
+    log(item);
+    }, Math.random()*11 * 50);
+    });
+    log("Done");
