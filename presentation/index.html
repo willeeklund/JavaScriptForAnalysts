@@ -37,11 +37,13 @@
 			<div class="slides">
 
 				<section>
-					<h1>JavaScript for Analysts</h1>
+					<img src="img/ccell_digital_media.png" style="float:left; width: 100px; height: 100px; margin-right: 40px;">
+					<h2 style="float:left;">JavaScript for Analysts</h2>
+
 					<div style="float:left;margin-left: 50px">
 						<h3>Anders Bäck</h3>
 						<img src="img/anba.jpg" height="150px"/>
-                        <p>SC</p>
+                        <p>SrC</p>
                         <p style="font-size:17px">Cofounder collectably.com</p>
 					</div>
                     <div style="float:right;margin-right: 50px">
@@ -57,7 +59,8 @@
                 </section>
 
 				<section>
-					<h2>Expectation</h2>
+					<h1>Expectations</h1>
+					<p style="height:200px">&nbsp;</p>
 				</section>
 
                 <section>
@@ -65,46 +68,97 @@
                     <ul>
                         <li>Background</li>
                         <li>Why learn Javascript (JS)?</li>
-                        <li>What is JS ?</li>
                         <li>Web Development</li>
+                        <li>What is JS ?</li>
+                        <li>jQuery</li>
                     </ul>
+                    <p style="height:200px">&nbsp;</p>
                 </section>
 
                 <section>
                     <p>"Javascript .. det är väl ungefär som Java"</p>
+                    <p style="height:200px">&nbsp;</p>
                 </section>
 
                 <section>
-                    <h1>1995</h1>
                     <img src="img/netscape_navgator.jpg">
                     <p class="fragment">"This is to weird looking, make the syntax look more like Java"</p>
+                    <p style="height:200px">&nbsp;</p>
                 </section>
 
                 <section>
-                    <h1>1997 &gt </h1>
                     <img style="float:left" src="img/flash.jpeg" height="300px">
                     <img style="float:right;top:100px" src="img/silverlight.jpeg" height="300px">
-                </section>
-
-                <section>
-                    <h1>1999</h1>
-                    <img src="img/ajax.jpeg" height="500px">
-                </section>
-
-                <section>
-                    <h1>2004</h1>
-                    <img src="img/chrome.jpeg" height="400px">
-                </section>
-
-                <section>
-                    <h1>2008></h1>
-                    <img src="img/grapgh.jpg" height="500px">
+                    <img src="img/google.jpg" height="400px" style="clear:both;" class="fragment">
+                    <p style="height:200px">&nbsp;</p>
                 </section>
 
                 <section>
                     <h2>Why ?</h2>
                     <p class="fragment">THE Scripting language of the web</p>
+                    <p style="height:200px">&nbsp;</p>
 	            </section>
+
+
+				<section>
+					<h2>Web development</h2>
+					<ul class="fragment">
+						<li>Interaction</li>
+					</ul>
+					<p style="height:200px">&nbsp;</p>
+				</section>
+
+				<section>
+					<h2 class="">Clientside vs Serverside</h2>
+					<ul class="fragment">
+						<li>Fast</li>
+						<li>Interacts with the browser</li>
+					</ul>
+					<p style="height:200px">&nbsp;</p>
+				</section>
+
+				<section>
+					<section id="events">
+						<h2>Event listeners</h2>
+						<pre class="fragment"><code contenteditable>$('.mySelector').on('click', function(event) {
+  // React to the click
+});</code></pre>
+						<ul class="fragment">
+							<li style="">"click"</li>
+							<li style="">"submit"</li>
+							<li style="">"keypress"</li>
+						</ul>
+						<p style="height:200px">&nbsp;</p>
+					</section>
+
+					<section>
+						<h2>The event object</h2>
+								<pre class=""><code contenteditable>function (event) {
+    event.preventDefault();
+    // Do something
+}</code></pre>
+						<p style="height:200px">&nbsp;</p>
+					</section>
+
+					<!--
+					<section id="custom_events">
+						<h2 class="">Custom events</h2>
+						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
+  alert('Now our custom event happened! ');
+});
+$('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
+						<span class="mySelector"></span>
+						<button id="run_custom_event" class="btn-large">Run code</button>
+						<script type="text/javascript">
+							// alert('Now our custom event happened! param1=' + param1 + ", param2=" + param2);
+							$('#run_custom_event').on('click', function() {
+								eval($('#custom_event_code').text());
+							});
+						</script>
+						<p style="height:200px">&nbsp;</p>
+					</section>
+					-->
+				</section>
 
                 <section>
                     <img src="img/githublist.png" height="1000px">
@@ -201,18 +255,18 @@ log(addTwoNumbers(1,2));
 
 				<section>
 					<pre><code contenteditable>
-'' == '0'           // false
-0 == ''             // true
-0 == '0'            // true
+log('' == '0')           // false
+log(0 == '')             // true
+log(0 == '0')            // true
 
-false == 'false'    // false
-false == '0'        // true
+log(false == 'false')    // false
+log(false == '0')        // true
 
-false == undefined  // false
-false == null       // false
-null == undefined   // true
+log(false == undefined)  // false
+log(false == null)       // false
+log(null == undefined)   // true
 
-' \t\r\n ' == 0     // true
+log(' \t\r\n ' == 0)     // true
 					</code></pre>
 
 					<p class="fragment">
@@ -256,68 +310,15 @@ log(o.value)
                     <p class="output"></p>
                 </section>
 
-				<section>
-					<h2>Clientside vs Serverside</h2>
-					<ul class="fragment">
-						<li>Run on the users machine</li>
-						<li></li>
-						<li></li>
-					</ul>
-					<p style="height:200px">&nbsp;</p>
-				</section>
-
-				<section>
-					<section id="events">
-						<h2>Event listeners</h2>
-						<pre class=""><code contenteditable>$('.mySelector').on('click', function(event) {
-  // React to the click
-});</code></pre>
-						<ul class="fragment">
-							<li style="">"click"</li>
-							<li style="">"submit"</li>
-							<li style="">"keypress"</li>
-						</ul>
-						<p style="height:200px">&nbsp;</p>
-					</section>
-
-					<section>
-						<h2>The event object</h2>
-								<pre class=""><code contenteditable>function (event) {
-    event.preventDefault();
-    // Do something
-}</code></pre>
-						<p style="height:200px">&nbsp;</p>
-					</section>
-
-					<!--
-					<section id="custom_events">
-						<h2 class="">Custom events</h2>
-						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
-  alert('Now our custom event happened! ');
-});
-$('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
-						<span class="mySelector"></span>
-						<button id="run_custom_event" class="btn-large">Run code</button>
-						<script type="text/javascript">
-							// alert('Now our custom event happened! param1=' + param1 + ", param2=" + param2);
-							$('#run_custom_event').on('click', function() {
-								eval($('#custom_event_code').text());
-							});
-						</script>
-						<p style="height:200px">&nbsp;</p>
-					</section>
-					-->
-				</section>
 
 				<section>
 					<h1>jQuery</h1>
 					<ul>
 						<li class="fragment">Framework</li>
-						<li class="fragment">Document manipulation</li>
 						<li class="fragment">Event listeners</li>
+						<li class="fragment">Document manipulation</li>
 						<li class="fragment"><h2>Plugins!</h2></li>
 					</ul>
-					<img src="../img/jquery_usage_statistics.png" class="image fragment">
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
@@ -327,6 +328,20 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 				</section>
 
 				<section id="jquery_plugins">
+					<section>
+						<h2>Thousand of jQuery plugins!</h2>
+						<ul class="fragment">
+							<li>Steel with pride!</li>
+							<li>Open source licensed</li>
+							<li>Speed up delivery</li>
+							<li>
+								Look like a Pro
+								<br />
+								<img src="../img/mcguyver.jpg" class="image fragment">
+							</li>
+						</ul>
+					</section>
+
 					<section>
 						<h2>jQuery plugin structure</h2>
 						<p>Extentions of jQuery</p>
@@ -342,20 +357,6 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 					<section>
 						<iframe src="../examples/jquery_plugin_carousel.html">
 						</iframe>
-					</section>
-
-					<section>
-						<h2>Thousand of plugins!</h2>
-						<ul class="fragment">
-							<li>Steel with pride!</li>
-							<li>Open source licensed</li>
-							<li>Speed up delivery</li>
-							<li>
-								Look like a Pro
-								<br />
-								<img src="../img/mcguyver.jpg" class="image fragment">
-							</li>
-						</ul>
 					</section>
 				</section>
 
