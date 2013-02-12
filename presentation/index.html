@@ -81,15 +81,8 @@
                 </section>
 
                 <section>
-                    <img src="img/netscape_navgator.jpg">
                     <p class="fragment">"This is to weird looking, make the syntax look more like Java"</p>
-                    <p style="height:200px">&nbsp;</p>
-                </section>
-
-                <section>
-                    <img style="float:left" src="img/flash.jpeg" height="300px">
-                    <img style="float:right;top:100px" src="img/silverlight.jpeg" height="300px">
-                    <img src="img/google.jpg" height="400px" style="clear:both;" class="fragment">
+                    <img src="img/netscape_navgator.jpg">
                     <p style="height:200px">&nbsp;</p>
                 </section>
 
@@ -99,11 +92,29 @@
                     <p style="height:200px">&nbsp;</p>
 	            </section>
 
+                <section>
+                    <img style="float:left" src="img/flash.jpeg" height="300px">
+                    <img style="float:right;top:100px" src="img/silverlight.jpeg" height="300px">
+                    <img src="img/google.jpg" height="400px" style="clear:both;" class="fragment">
+                    <p style="height:200px">&nbsp;</p>
+                </section>
+
+
+                <section>
+                    <section>
+                        <img src="img/githublist.png" height="1000px">
+                    </section>
+
+                    <section>
+                        <img src="img/githublist_red.png" height="1000px">
+                    </section>
+                </section>
 
 				<section>
 					<h2>Web development</h2>
 					<ul class="fragment">
-						<li>Interaction</li>
+						<li>User interaction - without new page load</li>
+                        <li>Animations</li>
 					</ul>
 					<p style="height:200px">&nbsp;</p>
 				</section>
@@ -111,15 +122,33 @@
 				<section>
 					<h2 class="">Clientside vs Serverside</h2>
 					<ul class="fragment">
-						<li>Fast</li>
-						<li>Interacts with the browser</li>
 					</ul>
 					<p style="height:200px">&nbsp;</p>
 				</section>
 
+                <section>
+                    <section>
+                        <h2 class="">What happens when a page is loaded?</h2>
+                        <ul class="fragment">
+                            <li>HTML is downloaded</li>
+                            <li>Stylesheets and JavaScripts are downloaded</li>
+                            <li>JS interpreted immediately</li>
+                        </ul>
+                        <p style="height:200px">&nbsp;</p>
+                    </section>
+
+                    <section>
+                        <h2>Load & execution times</h2>
+                        <ul>
+                            <li>Show NET panel from browser</li>
+                        </ul>
+                    </section>
+
+                </section>
+
 				<section>
 					<section id="events">
-						<h2>Event listeners</h2>
+						<h2>Event driven programming - listeners</h2>
 						<pre class="fragment"><code contenteditable>$('.mySelector').on('click', function(event) {
   // React to the click
 });</code></pre>
@@ -159,10 +188,6 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 					</section>
 					-->
 				</section>
-
-                <section>
-                    <img src="img/githublist.png" height="1000px">
-                </section>
 
                 <section>
                     <h2>Javascript is</h2>
@@ -269,6 +294,9 @@ log(null == undefined)   // true
 log(' \t\r\n ' == 0)     // true
 					</code></pre>
 
+                    <button class="btn btn-large eval">Submit</button>
+                    <p class="output"></p>
+
 					<p class="fragment">
 						Always use === and !== <br /><br />
 						All of the comparisons just shown <br />produce false with the === operator.
@@ -282,9 +310,8 @@ log(' \t\r\n ' == 0)     // true
                 </section>
 
                 <section class="codeblock">
-<pre ><code contenteditable>var myobject = function()
-{
-this.value = 5;
+<pre ><code contenteditable>var myobject = function() {
+  this.value = 5;
 };
 var o = new myobject();
 log(o.value)
@@ -299,12 +326,12 @@ log(o.value)
 
                 <section class="codeblock">
 <pre ><code contenteditable>var myArray = [0,1,2];
-    myArray.forEach(function(item) {
-    setTimeout(function() {
+myArray.forEach(function(item) {
+  setTimeout(function() {
     log(item);
-    }, Math.random()*11 * 50);
-    });
-    log("Done");
+  }, Math.random() * 11 * 50);
+});
+log("Done");
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
                     <p class="output"></p>
