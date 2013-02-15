@@ -66,10 +66,9 @@
                 <section>
                     <h2>Overview</h2>
                     <ul>
-                        <li>Background</li>
-                        <li>Why learn Javascript (JS)?</li>
+                        <li>Background and Why learn JS ?</li>
                         <li>Web Development</li>
-                        <li>What is JS ?</li>
+                        <li>What is JS (Code Examples)?</li>
                         <li>jQuery</li>
                     </ul>
                     <p style="height:400px">&nbsp;</p>
@@ -100,6 +99,11 @@
                 </section>
 
                 <section>
+                    <img style="float:left" src="img/jsUsage.png" height="300px">
+                    <p style="height:200px">&nbsp;</p>
+                </section>
+
+                <section>
                     <section>
                         <img src="img/githublist.png" height="1000px">
                     </section>
@@ -108,6 +112,17 @@
                         <img src="img/githublist_red.png" height="1000px">
                     </section>
                 </section>
+
+                <section>
+                    <p>THE Scripting language of the web</p>
+                    <p style="height:200px">&nbsp;</p>
+                </section>
+
+                <section>
+                    <p>Grow as a Developer</p>
+                    <p style="height:200px">&nbsp;</p>
+                </section>
+
 
 				<section>
 					<h2>Web development</h2>
@@ -141,6 +156,11 @@
                     </section>
 
                     <section>
+                        <img src="img/html-css-javascript.png" height="400px">
+                        <p style="height:200px">&nbsp;</p>
+                    </section>
+
+                    <section>
                         <h2>Load & execution times</h2>
                         <ul>
                             <li>Show NET panel from browser</li>
@@ -155,9 +175,20 @@
 				<section>
 					<section id="events">
 						<h2>Event driven programming - listeners</h2>
-						<pre class="fragment"><code contenteditable>$('.mySelector').on('click', function(event) {
-  // React to the click
-});</code></pre>
+						<pre class="fragment"><code>&lthtml&gt
+    &ltbody&gt
+
+        &ltbutton class='mySelector'/&gt
+
+        &ltscript type='text/javascript'&gt
+
+            $('.mySelector').on('click', function(event) {
+            // React to the click
+            });
+
+        &lt/script&gt
+    &lt/body&gt
+&lt/html&gt                            </code></pre>
 						<ul class="fragment">
 							<li style="">"click"</li>
 							<li style="">"submit"</li>
@@ -196,15 +227,16 @@ $('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
 				</section>
 
                 <section>
-                    <h2>Javascript is</h2>
+                    <h2>What is Javascript ?</h2>
                     <ul>
-                        <li>A scripting language</li>
-                        <li>Weakly typed</li>
-                        <li>Object Oriented</li>
+                        <li>Basic Syntax</li>
+                        <li>Functions Are Objects</li>
+                        <li>A Weakly typed scripting language</li>
                         <li>Non-blocking</li>
                     </ul>
                     <p style="height:400px">&nbsp;</p>
                 </section>
+
                 <section>
                     <p>JS is a scripting language</p>
                     <p style="height:400px">&nbsp;</p>
@@ -233,6 +265,10 @@ log(mystring);
                     <p style="height:400px">&nbsp;</p>
                 </section>
 
+                <section>
+                    <p>Basic Syntax</p>
+                </section>
+
 
 
                 <section class="codeblock">
@@ -241,13 +277,20 @@ var myInt = 0;
 var myFloat = 0.1;
 var myBool = true;
 var myArray = ["stringElement", 1];
-var myMap = {name : "Anders", age: 28};
-log(myMap.name); //Outputs 'Anders'
-log(myMap.age); //Outputs '28'
+var myDict = {name : "Anders", age: 28};
+
+log(myDict.name); //Outputs 'Anders'
+log(myDict.age); //Outputs '28'
 </code></pre>
-                <button class="btn btn-large eval">Submit</button>
-                <p class="output"></p>
-                <p style="height:400px">&nbsp;</p>
+<<<<<<< HEAD
+                    <button class="btn btn-large eval">Submit</button>
+                    <p class="output"></p>
+                    <p style="height:400px">&nbsp;</p>
+                </section>
+
+                <section>
+                    <button class="btn btn-large eval">Submit</button>
+                    <p class="output"></p>
                 </section>
 
                 <section>
@@ -257,28 +300,30 @@ log(myMap.age); //Outputs '28'
 
                 <section class="codeblock">
 <pre ><code contenteditable>var addTwoNumbers = function(a,b) {
-return a+b;
-};
+    return a+b;
+    };
 log(addTwoNumbers(1,2));
-</code></pre>
-                <button class="btn btn-large eval">Submit</button>
-                <p class="output"></p>
-                <p style="height:400px">&nbsp;</p>
-                </section>
-
-
-                <section>
-                    <p>JS is weakly typed</p>
-                    <p style="height:400px">&nbsp;</p>
-                </section>
-
-                <section class="codeblock">
-<pre ><code contenteditable>log("hej");
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
                     <p class="output"></p>
                     <p style="height:400px">&nbsp;</p>
                 </section>
+
+                <section>
+                    <p>A weakly typed scripting language</p>
+                </section>
+
+                <section class="codeblock">
+<pre ><code contenteditable>var mystring = "hej";
+log(mystring);
+</code></pre>
+                    <button class="btn btn-large eval">Submit</button>
+                    <p class="output"></p>
+                    <p style="height:400px">&nbsp;</p>
+                </section>
+
+
+
 
                 <section>
                     <p>Equality Operators (==)</p>
@@ -319,7 +364,6 @@ log(' \t\r\n ' == 0)     // true
 					<p style="height:400px">&nbsp;</p>
 				</section>
 
-
                 <section>
                     <p>Javascript is Object Oriented</p>
                     <p style="height:400px">&nbsp;</p>
@@ -343,12 +387,16 @@ log(o.value)
                 </section>
 
                 <section class="codeblock">
-<pre ><code contenteditable>var myArray = [0,1,2];
-myArray.forEach(function(item) {
-  setTimeout(function() {
-    log(item);
-  }, Math.random() * 11 * 50);
+<pre ><code contenteditable>var slowRequest = function(func) { //Simulating a 3s low request
+setTimeout(function() {
+func(true);
+}, 3000);
+}
+
+slowRequest(function(res) {
+    log("Responded with " + res);
 });
+
 log("Done");
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
@@ -426,6 +474,21 @@ log("Done");
 					<h2>Thank you!</h2>
 					<p style="height:400px">&nbsp;</p>
 				</section>
+
+                <section>
+                    <p>Javascript is Object Oriented</p>
+                </section>
+
+                <section class="codeblock">
+<pre ><code contenteditable>var myobject = function() {
+    this.value = 5;
+    };
+    var o = new myobject();
+    log(o.value)
+</code></pre>
+                    <button class="btn btn-large eval">Submit</button>
+                    <p class="output"></p>
+                </section>
 
 			</div>
 

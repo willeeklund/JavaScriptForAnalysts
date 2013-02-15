@@ -17,3 +17,7 @@ code.cs {
     font-size: 27px;
     height:300px;
 }
+
+pre code.xml .javascript {
+    opacity: 1.0;
+}

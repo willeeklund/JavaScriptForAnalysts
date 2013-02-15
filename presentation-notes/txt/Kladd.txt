@@ -29,30 +29,17 @@ Utvecklade live script, gör så att syntaxen ser mer ut som java
 * 1997 integrerade Microsoft in IE i Windows och vann därmed, utvecklingen slutade.
 * Flash tog över. Microsoft Svarade med Silverlight
 * 1999 AJAX: Outlook Web Access
-* 2004: Google, 2 saker har de gjort bra: Gmail och Google Maps (HTML5) och V8
+* 2004: Google, 3 saker har de gjort bra: Gmail och Google Maps (HTML5) och V8
 * Möjliggjorde Häftig open source utveckling med HTML5 och Javascript
 * Och så här gick det: (Visa bilden)
 
-Early Javascript,
-window.alert()
-window
-
-== Why ==
-Man kan endast accessa HTML5 apier med javascript,
-Github bilden, 9/11 mest starrade repositorysen på Github har en koppling till Javascript
-
-== Javascript is  ==
-TODO
-
 == Javascript is a scripting language ==
-* Lätt att använda, lätt syntax
-* Lätta apier mot till exempel filsystem
-* läses in direkt från källkoden
-* lös struktur, löst typat
+
 
 == Basic syntax ==
 Räkna upp syntaxen,
-berätta att this is it
+berätta att this is it,
+I c# finns ArrayList, LinkedList, HashTable, Queues, SortedList, Stack
 
 == JS Functions ==
 === Functions are first class and can have properties ===
@@ -71,61 +58,20 @@ return a + b;
 var applyFunction = function(a, b, func) {
 return func(a,b);
 };
-applyFunction(1,4, addTwoNumbers);
+log(applyFunction(1,4, addTwoNumbers));
+
+
+== JS är ett skriptspråk ==
+* Lätt att använda, lätt syntax
+* Lätta apier mot till exempel filsystem
+* läses in direkt från källkoden
+* lös struktur, löst typat
 
 == JS is weakly typed ==
 * Ad hoc Type Conversion
 * Overloading
 * no type checking at function calls
 
-=== Exempel 1 ===
-var foo = function(bar) {
-log(bar);
-};
-foo(1); // foo(5),  foo("lkndfln")
-
-=== Exempel 1,5 ===
-var foo = function(bar) {
-log(bar);
-};
-foo(1, "ijnjkfd");
-
-
-=== Exempel 2 ===
-var foo = function() {
-log(arguments[0]);
-};
-foo(1); // foo(5),  foo("lkndfln")
-
-=== Exempel 3 ===
-var myString = 2;
-myString = "hej" + myString; //converteras implicit till en sträng
-myString;
-
-=== Exempel 4 ===
-var myString = 2;
-myString = "hej" + myString; //converteras implicit till en sträng
-myString;
-
-== Equality operators ==
-log("hej" == "hej2");
-log(false == 0);
-log('' == 0);
-log(0 == '0');
-' \t\r\n ' == 0     // true
-
-'' == '0'           // false
-0 == ''             // true
-0 == '0'            // true
-
-false == 'false'    // false
-false == '0'        // true
-
-false == undefined  // false
-false == null       // false
-null == undefined   // true
-
-' \t\r\n ' == 0     // true
 
 == Javascript är objectorienterat ==
 * Skapa instanser utav ett object
@@ -166,6 +112,9 @@ var o = new myobject();
 myobject.prototype.logName = function() {
      log(this.name);
 };
+
+o.logName(); 
+
 var context = function(fcn) {
     this.name = "context";
     fcn();
