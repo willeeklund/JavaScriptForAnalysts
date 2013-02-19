@@ -145,7 +145,7 @@
                     </section>
 
                     <section>
-                    	<pre class=""><code>&lthtml&gt
+                    	<pre class=""><code contenteditable>&lthtml&gt
   &lthead&gt
     &ltlink rel='stylesheet' href='css/style.css'&gt
     &lt script src='js/jquery.js'&gt
@@ -170,7 +170,7 @@
                     </section>
 
                     <section>
-                    	<pre class=""><code>&lthtml&gt
+                    	<pre class=""><code contenteditable>&lthtml&gt
   &lthead&gt
     &ltlink rel='stylesheet' href='css/style.css'&gt
     &lt script src='js/jquery.js'&gt
@@ -196,6 +196,36 @@
                     </section>
 
                     <section>
+                    	<pre class=""><code contenteditable>&lthtml&gt
+  &lthead&gt
+    &ltlink rel='stylesheet' href='css/style.css'&gt
+    &lt script src='js/jquery.js'&gt
+  &lt/head&gt
+  &ltbody&gt
+
+    &ltscript type="text/javascript"&gt
+      $(document).ready(function() {
+        $(".mySelector_red").css('background', 'red');
+      });
+    &lt/script&gt
+    &ltbutton class="mySelector_red"&gtMy red button&lt/button&gt
+
+  &lt/body&gt
+&lt/html&gt
+</code></pre>
+						<script type="text/javascript">
+						    $(document).ready(function() {
+                    		    $('.red.mySelector2').css('background', 'red');
+                    	    });
+                    	</script>
+						<button class="red mySelector2 btn" style="font-size: 28px; height: 34px;">
+                    		My red button
+                    	</button>
+
+						<p style="height:400px">&nbsp;</p>
+                    </section>
+
+                    <section>
                         <h2>Load & execution times</h2>
                         <ul>
                             <li class="fragment">Browser NET panel</li>
@@ -208,7 +238,7 @@
 				<section>
 					<section id="events">
 						<h2>Event driven programming - listeners</h2>
-						<pre class="fragment"><code>&lthtml&gt
+						<pre class="fragment"><code contenteditable>&lthtml&gt
   &ltbody&gt
     &ltbutton class='mySelector'&gtMy button&lt/button&gt
     &ltscript type='text/javascript'&gt
