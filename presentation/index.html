@@ -56,6 +56,7 @@
                 <section>
                     <h3>Collectably.com</h3>
                     <img src="img/collectably.png" />
+                    <p style="height:400px">&nbsp;</p>
                 </section>
 
 				<section>
@@ -100,7 +101,7 @@
 
                 <section>
                     <img style="float:left" src="img/jsUsage.png" height="300px">
-                    <p style="height:200px">&nbsp;</p>
+                    <p style="height:800px">&nbsp;</p>
                 </section>
 
                 <section>
@@ -114,61 +115,93 @@
                 </section>
 
                 <section>
-                    <p>THE Scripting language of the web</p>
-                    <p style="height:200px">&nbsp;</p>
-                </section>
-
-                <section>
                     <p>Grow as a Developer</p>
-                    <p style="height:200px">&nbsp;</p>
+                    <p style="height:400px">&nbsp;</p>
                 </section>
 
 
 				<section>
 					<h2>Web development</h2>
-					<ul class="fragment">
-                        <li>HTML = structure</li>
-                        <li>CSS = styling</li>
-                        <li>JS = dynamics</li>
-					</ul>
 					<p style="height:400px">&nbsp;</p>
 				</section>
 
 				<section>
 					<h2 class="">Clientside vs Serverside</h2>
-					<ul class="fragment">
-                        <li>Dynamic web pages - react without new page load</li>
-                        <li>Animations</li>
-					</ul>
+					<p class="fragment">
+                        What does it mean to You?
+					</p>
 					<p style="height:400px">&nbsp;</p>
 				</section>
 
                 <section>
                     <section>
                         <h2 class="">What happens when a page is loaded?</h2>
-                        <ul class="fragment">
-                            <li>HTML is downloaded</li>
-                            <li>Images are downloaded</li>
-                            <li>Stylesheets and JavaScripts are downloaded</li>
-                            <li>JS interpreted immediately</li>
-                        </ul>
                         <p style="height:400px">&nbsp;</p>
                     </section>
 
                     <section>
                         <img src="img/html-css-javascript.png" height="400px">
-                        <p style="height:200px">&nbsp;</p>
+                        <p style="height:400px">&nbsp;</p>
+                    </section>
+
+                    <section>
+                    	<pre class=""><code>&lthtml&gt
+  &lthead&gt
+    &ltlink rel='stylesheet' href='css/style.css'&gt
+    &lt script src='js/jquery.js'&gt
+  &lt/head&gt
+  &ltbody&gt
+
+    &ltbutton class="mySelector_green"&gtMy green button&lt/button&gt
+    &ltscript type="text/javascript"&gt
+      $(".mySelector_green").css('background', 'green');
+    &lt/script&gt
+
+  &lt/body&gt
+&lt/html&gt
+</code></pre>
+						<button class="green mySelector btn" style="color: white; font-size: 28px; height: 34px;">
+                    		My green button
+                    	</button>
+                    	<script type="text/javascript">
+                    		$('.green.mySelector').css('background', 'green');
+                    	</script>
+						<p style="height:400px">&nbsp;</p>
+                    </section>
+
+                    <section>
+                    	<pre class=""><code>&lthtml&gt
+  &lthead&gt
+    &ltlink rel='stylesheet' href='css/style.css'&gt
+    &lt script src='js/jquery.js'&gt
+  &lt/head&gt
+  &ltbody&gt
+
+    &ltscript type="text/javascript"&gt
+      $(".mySelector_red").css('background', 'red');
+    &lt/script&gt
+    &ltbutton class="mySelector_red"&gtMy red button&lt/button&gt
+
+  &lt/body&gt
+&lt/html&gt
+</code></pre>
+						<script type="text/javascript">
+                    		$('.red.mySelector').css('background', 'red');
+                    	</script>
+						<button class="red mySelector btn" style="font-size: 28px; height: 34px;">
+                    		My red button
+                    	</button>
+
+						<p style="height:400px">&nbsp;</p>
                     </section>
 
                     <section>
                         <h2>Load & execution times</h2>
                         <ul>
-                            <li>Show NET panel from browser</li>
+                            <li class="fragment">Browser NET panel</li>
                         </ul>
                         <p style="height:400px">&nbsp;</p>
                     </section>
-
-
 
                 </section>
 
@@ -176,19 +209,18 @@
 					<section id="events">
 						<h2>Event driven programming - listeners</h2>
 						<pre class="fragment"><code>&lthtml&gt
-    &ltbody&gt
+  &ltbody&gt
+    &ltbutton class='mySelector'&gtMy button&lt/button&gt
+    &ltscript type='text/javascript'&gt
 
-        &ltbutton class='mySelector'/&gt
+      $('.mySelector').on('click', function(event) {
+        // React to the click
+      });
 
-        &ltscript type='text/javascript'&gt
-
-            $('.mySelector').on('click', function(event) {
-            // React to the click
-            });
-
-        &lt/script&gt
-    &lt/body&gt
-&lt/html&gt                            </code></pre>
+    &lt/script&gt
+  &lt/body&gt
+&lt/html&gt
+</code></pre>
 						<ul class="fragment">
 							<li style="">"click"</li>
 							<li style="">"submit"</li>
@@ -205,25 +237,6 @@
 }</code></pre>
 						<p style="height:400px">&nbsp;</p>
 					</section>
-
-					<!--
-					<section id="custom_events">
-						<h2 class="">Custom events</h2>
-						<pre><code contenteditable id="custom_event_code" style="width: 100%;">$('.mySelector').on('custom_event', function(ev, param1, param2) {
-  alert('Now our custom event happened! ');
-});
-$('.mySelector').trigger('custom_event', ['param1', 'param2']);</code></pre>
-						<span class="mySelector"></span>
-						<button id="run_custom_event" class="btn-large">Run code</button>
-						<script type="text/javascript">
-							// alert('Now our custom event happened! param1=' + param1 + ", param2=" + param2);
-							$('#run_custom_event').on('click', function() {
-								eval($('#custom_event_code').text());
-							});
-						</script>
-						<p style="height:400px">&nbsp;</p>
-					</section>
-					-->
 				</section>
 
                 <section>
@@ -294,8 +307,8 @@ print(myDict.age); //Outputs '28'
 
                 <section class="codeblock">
 <pre ><code contenteditable>var addTwoNumbers = function(a,b) {
-    return a+b;
-    };
+  return a+b;
+};
 print(addTwoNumbers(1,2));
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
@@ -316,16 +329,13 @@ print(mystring);
                     <p style="height:400px">&nbsp;</p>
                 </section>
 
-
-
-
                 <section>
                     <p>Equality Operators (==)</p>
                     <p style="height:400px">&nbsp;</p>
                 </section>
 
                 <section class="codeblock">
-<pre ><code contenteditable>print("hej" == "hej2");
+<pre><code contenteditable>print("hej" == "hej2");
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
                     <p class="output"></p>
@@ -352,8 +362,7 @@ print(' \t\r\n ' == 0)     // true
                     <p class="output"></p>
 
 					<p class="fragment">
-						Always use === and !== <br /><br />
-						All of the comparisons just shown <br />produce false with the === operator.
+						Always use === and !==
 					</p>
 					<p style="height:400px">&nbsp;</p>
 				</section>
@@ -401,12 +410,14 @@ print("Done");
 
 				<section>
 					<h1>jQuery</h1>
+					<!--
 					<ul>
 						<li class="fragment">Framework</li>
 						<li class="fragment">Event listeners</li>
 						<li class="fragment">Document manipulation</li>
 						<li class="fragment"><h2>Plugins!</h2></li>
 					</ul>
+					-->
 					<p style="height:400px">&nbsp;</p>
 				</section>
 
@@ -416,6 +427,7 @@ print("Done");
 				</section>
 
 				<section id="jquery_plugins">
+					<!--
 					<section>
 						<h2>Thousand of jQuery plugins!</h2>
 						<ul class="fragment">
@@ -430,6 +442,7 @@ print("Done");
 						</ul>
                         <p style="height:400px">&nbsp;</p>
 					</section>
+					-->
 
 					<section>
 						<h2>jQuery plugin structure</h2>
@@ -470,7 +483,8 @@ print("Done");
 				</section>
 
                 <section>
-                    <p>Javascript is Object Oriented</p>
+                    <h2>Javascript is Object Oriented</h2>
+                    <p style="height:400px">&nbsp;</p>
                 </section>
 
                 <section class="codeblock">
@@ -482,6 +496,7 @@ print("Done");
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
                     <p class="output"></p>
+                    <p style="height:400px">&nbsp;</p>
                 </section>
 
 			</div>
