@@ -50,6 +50,7 @@
                         <h3>Wilhelm Eklund</h3>
                         <img src="img/wiek.jpg" height="150px"/>
                         <p>AC</p>
+                        <p style="font-size:17px">JS ninja @ SCM</p>
                     </div>
 				</section>
 
@@ -94,14 +95,14 @@
                 </section>
 
                 <section>
-                    <h2>Why ?</h2>
-                    <p class="fragment">THE Scripting language of the web</p>
-                    <p style="height:400px">&nbsp;</p>
+                    <img style="float:left" src="img/jsUsage.png" height="300px">
+                    <p style="height:800px">&nbsp;</p>
                 </section>
 
                 <section>
-                    <img style="float:left" src="img/jsUsage.png" height="300px">
-                    <p style="height:800px">&nbsp;</p>
+                    <h2>Why ?</h2>
+                    <p class="fragment">THE Scripting language of the web</p>
+                    <p style="height:400px">&nbsp;</p>
                 </section>
 
                 <section>
@@ -312,8 +313,6 @@ print(mystring);
                     <p>Basic Syntax</p>
                 </section>
 
-
-
                 <section class="codeblock">
 <pre ><code contenteditable>var myString = "myString";
 var myInt = 0;
@@ -334,6 +333,7 @@ print(myDict.age); //Outputs '28'
                     <p>JS Functions are objects</p>
                     <p style="height:400px">&nbsp;</p>
                 </section>
+
 
                 <section class="codeblock">
 <pre ><code contenteditable>var addTwoNumbers = function(a,b) {
@@ -365,7 +365,7 @@ print(mystring);
                 </section>
 
                 <section class="codeblock">
-<pre><code contenteditable>print("hej" == "hej2");
+<pre><code contenteditable>print("1" == 1);
 </code></pre>
                     <button class="btn btn-large eval">Submit</button>
                     <p class="output"></p>
@@ -398,36 +398,19 @@ print(' \t\r\n ' == 0)     // true
 				</section>
 
                 <section>
-                    <p>Javascript is Object Oriented</p>
-                    <p style="height:400px">&nbsp;</p>
-                </section>
-
-                <section class="codeblock">
-<pre ><code contenteditable>var myobject = function() {
-  this.value = 5;
-};
-var o = new myobject();
-print(o.value)
-</code></pre>
-                    <button class="btn btn-large eval">Submit</button>
-                    <p class="output"></p>
-                    <p style="height:400px">&nbsp;</p>
-                </section>
-
-                <section>
                     <p>Javascript is Non - blocking</p>
                     <p style="height:400px">&nbsp;</p>
                 </section>
 
                 <section class="codeblock">
 <pre ><code contenteditable>var slowRequest = function(func) { //Simulating a 3s low request
-setTimeout(function() {
-func(true);
-}, 3000);
+  setTimeout(function() {
+    func(true);
+  }, 3000);
 }
 
 slowRequest(function(res) {
-    print("Responded with " + res);
+  print("Responded with " + res);
 });
 
 print("Done");
@@ -457,23 +440,6 @@ print("Done");
 				</section>
 
 				<section id="jquery_plugins">
-					<!--
-					<section>
-						<h2>Thousand of jQuery plugins!</h2>
-						<ul class="fragment">
-							<li>Steel with pride!</li>
-							<li>Open source licensed</li>
-							<li>Speed up delivery</li>
-							<li>
-								Look like a Pro
-								<br />
-								<img src="../img/mcguyver.jpg" class="image fragment">
-							</li>
-						</ul>
-                        <p style="height:400px">&nbsp;</p>
-					</section>
-					-->
-
 					<section>
 						<h2>jQuery plugin structure</h2>
 						<p>Extentions of jQuery</p>
@@ -491,6 +457,31 @@ print("Done");
 						</iframe>
 					</section>
 				</section>
+
+                <section>
+                    <section>
+                        <h2>Questions?</h2>
+                    </section>
+
+                    <section>
+                        <p>Javascript is Object Oriented</p>
+                        <p style="height:400px">&nbsp;</p>
+                    </section>
+
+                    <section class="codeblock">
+<pre ><code contenteditable>var myobject = function() {
+  this.value = 5;
+};
+var o = new myobject();
+print(o.value)
+</code></pre>
+                        <button class="btn btn-large eval">Submit</button>
+                        <p class="output"></p>
+                        <p style="height:400px">&nbsp;</p>
+                    </section>
+
+
+                </section>
 
 				<section>
 					<h2>Thank you!</h2>
