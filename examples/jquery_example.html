@@ -10,13 +10,17 @@
 <h1>jQuery example</h1>
 
 <button id="button1" class="btn-large">Action button</button>
+
 <h2>Register event handler:</h2>
 <pre><code class="register_event js">$('#button1').on('click', handle_button1_click );</code></pre>
 
+<button id="button2" class="btn-large">Show code to run</button>
 <div id="button1_info" style="display: none;">
 	<h2>Function on click:</h2>
 	<pre><code class="function_def"></code></pre>
 </div>
+
+
 
 
 <script type="text/javascript" src="../js/lib/jquery.js"></script>
@@ -27,9 +31,8 @@
 		$('#button1_info .function_def').html($('#handle_button1_click').html());
 		console.info("Ajax example");
 		$('#button1').on('click', handle_button1_click );
-		$('#button1').on('click', function (ev) {
+		$('#button2').on('click', function (ev) {
 			console.log("Button 1 is clicked");
-
 			$('#button1_info').show();
 		});
 
